@@ -1,53 +1,59 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 11/24/2023 10:36:33 AM
-// Design Name: 
-// Module Name: random
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-
-module random(
-    input clk,
-    input rst,
-    input start_generation, // Signal to trigger random number generation
-    output reg [3:0] random_numbers [0:9] // Array of 10 random numbers
+module RandomSwitchLEDController (
+    input wire clk,
+    input wire rst,
+    output reg [15:0] leds,
+    output reg [15:0] switches
 );
 
-    integer i;
+    // Internal signals
+    reg[15:0] random_switches;
+    reg [15:0] obstruction_switches;
 
-    always @(posedge clk or posedge rst) begin
+    // Counter for LED activation
+    reg [3:0] led_count;
+
+    // Parameter for the number of LEDs and switches
+    parameter NUM_LEDS = 16;
+    parameter NUM_SWITCHES = 16;
+
+    // Random number generator module
+    RandomNumberGenerator #(
+        .NUM_BITS(4) // Number of bits needed to represent NUM_SWITCHES
+    ) rng (
+        .clk(clk),
+        .rst(rst),
+        .start_generation(1),
+        .random_numbers(random_switches)
+    );
+
+    // LED control logic
+    always @(posedge clk or posedge rst)
+    begin
         if (rst) 
         begin
-            for (i = 0; i < 10; i= i+1) 
-            begin
-                random_numbers[i] <= 4'b0000; // Reset the random numbers to 0
-            end
+            leds <= 16'b0000_0000_0000_0000;
+            switches <= 16'b0000_0000_0000_0000;
+            led_count <= 4'b0000;
+            obstruction_switches <= 16'b0000_0000_0000_0000;
         end 
         else 
         begin
-            if (start_generation) 
+            if (led_count == NUM_LEDS) 
             begin
-                for (i = 0; i < 10; i = i+1) 
-                begin
-                    random_numbers[i] <= $urandom_range(16); // Generate a random number between 0 and 15 for each element in the array
-                end
+                // All LEDs are lit, reset LED count and obstruction switches
+                led_count <= 4'b0000;
+                obstruction_switches <= 16'b0000_0000_0000_0000;
+            end 
+            else 
+            begin
+                // Increment LED count and set corresponding LED
+                led_count <= led_count + 1;
+                leds[led_count] <= 1'b1;
+                obstruction_switches[random_switches[led_count]] <= 1'b1;
             end
+            // Output the selected switches
+            switches <= random_switches & ~obstruction_switches;
         end
     end
 
 endmodule
-

@@ -1,0 +1,737 @@
+/*
+
+AMD Vivado v2023.1 (64-bit) [Major: 2023, Minor: 1]
+SW Build: 3865809 on Sun May  7 15:05:29 MDT 2023
+IP Build: 3864474 on Sun May  7 20:36:21 MDT 2023
+IP Build: 3864474 on Sun May  7 20:36:21 MDT 2023
+
+Process ID (PID): 8080
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri Nov 24 11:08:45 ICT 2023
+Time zone: 	Indochina Time (Asia/Bangkok)
+
+OS: Windows 11
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 150
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=18
+Scale size: 27
+OS font scaling: 150%
+
+Java version: 	17.0.3 64-bit
+JavaFX version: 17.0.1
+Java home: 	C:/Xilinx/Vivado/2023.1/tps/win64/jre17.0.3_7
+Java executable: 	C:/Xilinx/Vivado/2023.1/tps/win64/jre17.0.3_7/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	CPE
+User home directory: C:/Users/CPE
+User working directory: C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2023.1
+RDI_DATADIR: C:/Xilinx/Vivado/2023.1/data
+RDI_BINDIR: C:/Xilinx/Vivado/2023.1/bin
+
+Vivado preferences file: C:/Users/CPE/AppData/Roaming/Xilinx/Vivado/2023.1/vivado.xml
+Vivado preferences directory: C:/Users/CPE/AppData/Roaming/Xilinx/Vivado/2023.1/
+Vivado layouts directory: C:/Users/CPE/AppData/Roaming/Xilinx/Vivado/2023.1/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2023.1/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/vivado.log
+Vivado journal file: 	C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/vivado.jou
+Engine tmp dir: 	C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/.Xil/Vivado-8080-DESKTOP-LFUI70J
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+RDI_APPROOT: C:/Xilinx/Vivado/2023.1
+RDI_ARGS:  -gui_launcher_event rodinguilauncherevent5532 "C:\Users\CPE\Desktop\CPE222\verilog_Led_game\LED GAME\LED GAME.xpr"
+RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
+RDI_BASEROOT: C:/Xilinx/Vivado
+RDI_BINDIR: C:/Xilinx/Vivado/2023.1/bin
+RDI_BINROOT: C:/Xilinx/Vivado/2023.1/bin
+RDI_BUILD: yes
+RDI_CHECK_PROG: True
+RDI_DATADIR: C:/Xilinx/Vivado/2023.1/data
+RDI_INSTALLROOT: C:/Xilinx
+RDI_INSTALLVER: 2023.1
+RDI_INSTALLVERSION: 2023.1
+RDI_ISE_PLATFORM: nt64
+RDI_JAVACEFROOT: C:/Xilinx/Vivado/2023.1/tps/win64/java-cef-95.0.4638.69
+RDI_JAVAFXROOT: C:/Xilinx/Vivado/2023.1/tps/win64/javafx-sdk-17.0.1
+RDI_JAVAROOT: C:/Xilinx/Vivado/2023.1/tps/win64/jre17.0.3_7
+RDI_JAVA_VERSION: 17.0.3_7
+RDI_LIBDIR: C:/Xilinx/Vivado/2023.1/lib/win64.o
+RDI_MINGW_LIB: C:/Xilinx/Vivado/2023.1\tps\mingw\6.2.0\win64.o\nt\bin;C:/Xilinx/Vivado/2023.1\tps\mingw\6.2.0\win64.o\nt\libexec\gcc\x86_64-w64-mingw32\6.2.0
+RDI_OPT_EXT: .o
+RDI_PLATFORM: win64
+RDI_PREPEND_PATH: C:/Xilinx/Vivado/2023.1/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2023.1/ids_lite/ISE/lib/nt64
+RDI_PROG: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/vivado.exe
+RDI_PROGNAME: vivado.exe
+RDI_PYTHON3: C:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3
+RDI_PYTHON3_VERSION: 3.8.3
+RDI_PYTHONHOME: C:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3
+RDI_PYTHONPATH: C:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3;C:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3\bin;C:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3\lib;C:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3\lib\site-packages
+RDI_PYTHON_LD_LIBPATH: C:/Xilinx/Vivado/2023.1\tps\win64\python-3.8.3\lib
+RDI_SESSION_INFO: C:\Users\CPE\Desktop\CPE222\verilog_Led_game\LEDGAME:DESKTOP-LFUI70J-Fri11-24-2023_11-08-29.82
+RDI_SHARED_DATA: C:/Xilinx/SharedData/2023.1/data
+RDI_TPS_ROOT: C:/Xilinx/Vivado/2023.1/tps/win64
+RDI_USE_JDK17: True
+RDI_VERBOSE: False
+XILINX: C:/Xilinx/Vivado/2023.1/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2023.1/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2023.1
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2023.1
+XILINX_VIVADO: C:/Xilinx/Vivado/2023.1
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2023.1
+_RDI_BINROOT: C:\Xilinx\Vivado\2023.1\bin
+_RDI_CWD: C:\Users\CPE\Desktop\CPE222\verilog_Led_game\LED GAME
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 822 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\CPE\Desktop\CPE222\verilog_Led_game\LED GAME\LED GAME.xpr. Version: Vivado v2023.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project {C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.xpr} 
+// HMemoryUtils.trashcanNow. Engine heap size: 859 MB. GUI used memory: 73 MB. Current time: 11/24/23, 11:08:46 AM ICT
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 112 MB (+114476kb) [00:00:21]
+// [Engine Memory]: 1,052 MB (+951691kb) [00:00:21]
+// [GUI Memory]: 151 MB (+35018kb) [00:00:23]
+// WARNING: HEventQueue.dispatchEvent() is taking  3671 ms.
+// Tcl Message: open_project {C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/CPE/Desktop/CPE222/LED GAME' since last save. INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.gen/sources_1'. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'. 
+// Project name: LED GAME; location: C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1436.371 ; gain = 355.535 
+dismissDialog("Open Project"); // bq
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (top_module.v) elapsed time: 0.2s
+// Elapsed time: 498 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v)]", 1, true); // E - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v)]", 1); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), random : random (random.v)]", 2, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), random : random (random.v)]", 2, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), random : random (random.v)]", 2, false, false, false, false, false, true); // E - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,106 MB. GUI used memory: 78 MB. Current time: 11/24/23, 11:17:22 AM ICT
+// [Engine Memory]: 1,106 MB (+1626kb) [00:08:52]
+// Elapsed time: 138 seconds
+selectCodeEditor("random.v", 225, 128); // ad
+selectCodeEditor("random.v", 225, 128); // ad
+selectCodeEditor("random.v", 288, 131); // ad
+// Elapsed time: 437 seconds
+selectCodeEditor("random.v", 264, 218); // ad
+selectCodeEditor("random.v", 467, 180); // ad
+selectCodeEditor("random.v", 466, 151); // ad
+selectCodeEditor("random.v", 459, 174); // ad
+selectCodeEditor("random.v", 459, 185); // ad
+// Elapsed time: 35 seconds
+selectCodeEditor("random.v", 298, 136); // ad
+selectCodeEditor("random.v", 298, 140, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("random.v", 319, 168); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 18m:54s
+selectCodeEditor("random.v", 225, 259); // ad
+// Elapsed Time for: 'L.f': 18m:56s
+// Elapsed time: 43 seconds
+selectCodeEditor("random.v", 367, 168); // ad
+selectCodeEditor("random.v", 379, 197); // ad
+selectCodeEditor("random.v", 400, 235); // ad
+selectCodeEditor("random.v", 386, 202); // ad
+selectCodeEditor("random.v", 402, 187); // ad
+selectCodeEditor("random.v", 402, 210); // ad
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "random.v", 1); // o
+// Elapsed time: 10 seconds
+selectCodeEditor("random.v", 287, 130); // ad
+selectCodeEditor("random.v", 300, 201); // ad
+selectCodeEditor("random.v", 486, 219); // ad
+// Elapsed time: 670 seconds
+selectCodeEditor("random.v", 576, 164); // ad
+selectCodeEditor("random.v", 542, 143); // ad
+selectCodeEditor("random.v", 484, 155); // ad
+// Elapsed time: 17 seconds
+selectCodeEditor("random.v", 440, 147); // ad
+// Elapsed time: 27 seconds
+selectCodeEditor("random.v", 475, 248); // ad
+selectCodeEditor("random.v", 419, 214); // ad
+// Elapsed time: 10 seconds
+selectCodeEditor("random.v", 230, 134); // ad
+// Elapsed time: 120 seconds
+selectCodeEditor("random.v", 408, 326); // ad
+selectCodeEditor("random.v", 406, 344); // ad
+typeControlKey((HResource) null, "random.v", 'v'); // ad
+selectCodeEditor("random.v", 176, 47); // ad
+selectCodeEditor("random.v", 173, 69); // ad
+selectCodeEditor("random.v", 175, 269); // ad
+selectCodeEditor("random.v", 158, 241); // ad
+selectCodeEditor("random.v", 386, 131); // ad
+selectCodeEditor("random.v", 425, 270); // ad
+selectCodeEditor("random.v", 439, 268); // ad
+selectCodeEditor("random.v", 524, 263); // ad
+selectCodeEditor("random.v", 448, 183); // ad
+selectCodeEditor("random.v", 425, 165); // ad
+selectCodeEditor("random.v", 425, 203); // ad
+selectCodeEditor("random.v", 365, 298); // ad
+selectCodeEditor("random.v", 403, 305); // ad
+selectCodeEditor("random.v", 427, 137); // ad
+selectCodeEditor("random.v", 534, 93); // ad
+selectCodeEditor("random.v", 530, 367); // ad
+selectCodeEditor("random.v", 434, 175); // ad
+selectCodeEditor("random.v", 193, 122); // ad
+selectCodeEditor("random.v", 125, 120); // ad
+selectCodeEditor("random.v", 372, 318); // ad
+selectCodeEditor("random.v", 185, 169); // ad
+selectCodeEditor("random.v", 131, 318); // ad
+selectCodeEditor("random.v", 144, 260); // ad
+selectCodeEditor("random.v", 474, 187); // ad
+// Elapsed time: 123 seconds
+selectCodeEditor("random.v", 459, 187); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 37m:33s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 37m:35s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 37m:37s
+// Elapsed Time for: 'L.f': 37m:39s
+// Elapsed time: 13 seconds
+selectCodeEditor("random.v", 377, 235); // ad
+selectCodeEditor("random.v", 423, 227, false, false, true, false, false); // ad - Alt Key
+selectCodeEditor("random.v", 439, 289); // ad
+selectCodeEditor("random.v", 610, 235); // ad
+selectCodeEditor("random.v", 416, 215); // ad
+selectCodeEditor("random.v", 401, 184); // ad
+selectCodeEditor("random.v", 395, 151); // ad
+selectCodeEditor("random.v", 385, 104); // ad
+selectCodeEditor("random.v", 408, 178); // ad
+selectCodeEditor("random.v", 461, 260); // ad
+selectCodeEditor("random.v", 288, 92); // ad
+selectCodeEditor("random.v", 221, 117); // ad
+selectCodeEditor("random.v", 139, 59); // ad
+// HMemoryUtils.trashcanNow. Engine heap size: 1,120 MB. GUI used memory: 79 MB. Current time: 11/24/23, 11:47:24 AM ICT
+// Elapsed time: 119 seconds
+selectCodeEditor("random.v", 336, 157); // ad
+typeControlKey((HResource) null, "random.v", 'c'); // ad
+// Elapsed time: 21 seconds
+selectCodeEditor("random.v", 381, 42); // ad
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), random : xil_defaultlib.random]", 2, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), random : xil_defaultlib.random]", 2, false, false, false, false, false, true); // E - Double Click
+selectCodeEditor("random.v", 197, 67); // ad
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RandomArrayGenerator (random.v)]", 3, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), random : xil_defaultlib.random]", 2, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), random : xil_defaultlib.random]", 2, false, false, false, false, true, false); // E - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RandomArrayGenerator (random.v)]", 3, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, RandomArrayGenerator (random.v)]", 3, false, false, false, false, false, true); // E - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v), random : xil_defaultlib.random]", 2, false); // E
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v)]", 1, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_module (top_module.v)]", 1, true, false, false, false, false, true); // E - Double Click - Node
+selectCodeEditor("top_module.v", 530, 271); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("top_module.v", 310, 213); // ad
+// Elapsed Time for: 'L.f': 40m:59s
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "random.v", 1); // o
+selectCodeEditor("random.v", 386, 16); // ad
+// Elapsed Time for: 'L.f': 41m:01s
+// Elapsed time: 11 seconds
+selectCodeEditor("random.v", 141, 46); // ad
+selectCodeEditor("random.v", 147, 67); // ad
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("random.v", 141, 33); // ad
+selectCodeEditor("random.v", 293, 26); // ad
+selectCodeEditor("random.v", 354, 16); // ad
+selectCodeEditor("random.v", 144, 43); // ad
+selectCodeEditor("random.v", 148, 43); // ad
+selectCodeEditor("random.v", 151, 48); // ad
+selectCodeEditor("random.v", 111, 53); // ad
+selectCodeEditor("random.v", 192, 36); // ad
+selectCodeEditor("random.v", 138, 55); // ad
+selectCodeEditor("random.v", 334, 81); // ad
+selectCodeEditor("random.v", 263, 101); // ad
+selectCodeEditor("random.v", 243, 75); // ad
+// Elapsed time: 34 seconds
+selectCodeEditor("random.v", 207, 62); // ad
+selectCodeEditor("random.v", 174, 33); // ad
+selectCodeEditor("random.v", 196, 36); // ad
+selectCodeEditor("random.v", 196, 36, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("random.v", 159, 40); // ad
+selectCodeEditor("random.v", 139, 41); // ad
+selectCodeEditor("random.v", 139, 47); // ad
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module.v", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "random.v", 1); // o
+selectCodeEditor("random.v", 158, 40); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module.v", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "random.v", 1); // o
+selectCodeEditor("random.v", 203, 44); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module.v", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "random.v", 1); // o
+selectCodeEditor("random.v", 280, 30); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module.v", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "random.v", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module.v", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "random.v", 1); // o
+// Elapsed time: 36 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module.v", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "random.v", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module.v", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "random.v", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module.v", 2); // o
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_CANCEL, "Cancel"); // a
+dismissDialog("Text Changed"); // h
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "random.v", 1); // o
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("random.v", 161, 66); // ad
+// Elapsed Time for: 'L.f': 44m:14s
+// Elapsed Time for: 'L.f': 44m:16s
+selectCodeEditor("random.v", 134, 197); // ad
+// Elapsed time: 58 seconds
+selectCodeEditor("random.v", 35, 159); // ad
+selectCodeEditor("random.v", 284, 60); // ad
+selectCodeEditor("random.v", 46, 59); // ad
+selectCodeEditor("random.v", 429, 32); // ad
+// Elapsed time: 99 seconds
+selectCodeEditor("random.v", 268, 248); // ad
+selectCodeEditor("random.v", 202, 84); // ad
+selectCodeEditor("random.v", 826, 61); // ad
+selectCodeEditor("random.v", 803, 43); // ad
+// Elapsed time: 96 seconds
+selectCodeEditor("random.v", 671, 42); // ad
+// Elapsed time: 265 seconds
+selectCodeEditor("random.v", 326, 96); // ad
+// Elapsed time: 46 seconds
+selectCodeEditor("random.v", 177, 140); // ad
+selectCodeEditor("random.v", 159, 112); // ad
+typeControlKey((HResource) null, "random.v", 'v'); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("random.v", 96, 117); // ad
+// Elapsed Time for: 'L.f': 54m:05s
+// Elapsed Time for: 'L.f': 54m:07s
+selectCodeEditor("random.v", 86, 110); // ad
+selectCodeEditor("random.v", 71, 110); // ad
+selectCodeEditor("random.v", 76, 111); // ad
+selectCodeEditor("random.v", 3, 115); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 54m:13s
+selectCodeEditor("random.v", 328, 184); // ad
+selectCodeEditor("random.v", 372, 171); // ad
+selectCodeEditor("random.v", 395, 221); // ad
+selectCodeEditor("random.v", 403, 160); // ad
+// Elapsed Time for: 'L.f': 54m:15s
+selectCodeEditor("random.v", 399, 123); // ad
+selectCodeEditor("random.v", 181, 166); // ad
+selectCodeEditor("random.v", 186, 165); // ad
+selectCodeEditor("random.v", 136, 238); // ad
+selectCodeEditor("random.v", 151, 262); // ad
+selectCodeEditor("random.v", 141, 238); // ad
+selectCodeEditor("random.v", 330, 231); // ad
+selectCodeEditor("random.v", 323, 215); // ad
+selectCodeEditor("random.v", 381, 211); // ad
+selectCodeEditor("random.v", 389, 329); // ad
+selectCodeEditor("random.v", 58, 320); // ad
+selectCodeEditor("random.v", 106, 334); // ad
+selectCodeEditor("random.v", 75, 167); // ad
+selectCodeEditor("random.v", 155, 300); // ad
+selectCodeEditor("random.v", 192, 346); // ad
+selectCodeEditor("random.v", 207, 329); // ad
+selectCodeEditor("random.v", 278, 258); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 54m:55s
+selectCodeEditor("random.v", 147, 341); // ad
+selectCodeEditor("random.v", 6, 116); // ad
+// Elapsed Time for: 'L.f': 54m:57s
+selectCodeEditor("random.v", 64, 335); // ad
+selectCodeEditor("random.v", 74, 340); // ad
+selectCodeEditor("random.v", 74, 340); // ad
+selectCodeEditor("random.v", 74, 340, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("random.v", 42, 249); // ad
+selectCodeEditor("random.v", 80, 342); // ad
+selectCodeEditor("random.v", 129, 343); // ad
+selectCodeEditor("random.v", 367, 302); // ad
+selectCodeEditor("random.v", 345, 328); // ad
+selectCodeEditor("random.v", 294, 282); // ad
+selectCodeEditor("random.v", 95, 197); // ad
+selectCodeEditor("random.v", 142, 238); // ad
+selectCodeEditor("random.v", 153, 308); // ad
+selectCodeEditor("random.v", 172, 307); // ad
+selectCodeEditor("random.v", 92, 343); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 55m:25s
+// Elapsed Time for: 'L.f': 55m:27s
+selectCodeEditor("random.v", 85, 341); // ad
+selectCodeEditor("random.v", 88, 363); // ad
+selectCodeEditor("random.v", 1, 143); // ad
+selectCodeEditor("random.v", 202, 340); // ad
+selectCodeEditor("random.v", 225, 357); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 55m:37s
+// Elapsed Time for: 'L.f': 55m:39s
+selectCodeEditor("random.v", 138, 163); // ad
+selectCodeEditor("random.v", 135, 163); // ad
+selectCodeEditor("random.v", 134, 189); // ad
+selectCodeEditor("random.v", 174, 214); // ad
+selectCodeEditor("random.v", 176, 250); // ad
+selectCodeEditor("random.v", 175, 233); // ad
+selectCodeEditor("random.v", 212, 263); // ad
+selectCodeEditor("random.v", 221, 263); // ad
+selectCodeEditor("random.v", 153, 332); // ad
+selectCodeEditor("random.v", 97, 144); // ad
+selectCodeEditor("random.v", 119, 307); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("random.v", 344, 260); // ad
+// Elapsed Time for: 'L.f': 56m:13s
+// Elapsed Time for: 'L.f': 56m:15s
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("random.v", 266, 203); // ad
+selectCodeEditor("random.v", 112, 162); // ad
+selectCodeEditor("random.v", 118, 162); // ad
+// Elapsed time: 10 seconds
+selectCodeEditor("random.v", 445, 212); // ad
+selectCodeEditor("random.v", 361, 177); // ad
+selectCodeEditor("random.v", 343, 173); // ad
+selectCodeEditor("random.v", 346, 179); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 56m:43s
+selectCodeEditor("random.v", 454, 191); // ad
+selectCodeEditor("random.v", 120, 237); // ad
+// Elapsed Time for: 'L.f': 56m:45s
+selectCodeEditor("random.v", 108, 207); // ad
+selectCodeEditor("random.v", 104, 216); // ad
+selectCodeEditor("random.v", 72, 216); // ad
+selectCodeEditor("random.v", 46, 216); // ad
+selectCodeEditor("random.v", 78, 218); // ad
+selectCodeEditor("random.v", 63, 220); // ad
+selectCodeEditor("random.v", 47, 220); // ad
+selectCodeEditor("random.v", 44, 196); // ad
+selectCodeEditor("random.v", 180, 291); // ad
+selectCodeEditor("random.v", 218, 270); // ad
+selectCodeEditor("random.v", 183, 293); // ad
+selectCodeEditor("random.v", 175, 289); // ad
+selectCodeEditor("random.v", 130, 321); // ad
+selectCodeEditor("random.v", 93, 344); // ad
+selectCodeEditor("random.v", 250, 90); // ad
+// Elapsed time: 60 seconds
+selectCodeEditor("random.v", 12, 118); // ad
+selectCodeEditor("random.v", 67, 138); // ad
+selectCodeEditor("random.v", 87, 138); // ad
+selectCodeEditor("random.v", 328, 14); // ad
+selectCodeEditor("random.v", 137, 40); // ad
+selectCodeEditor("random.v", 326, 16); // ad
+selectCodeEditor("random.v", 419, 92); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module.v", 2); // o
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 3, true, false, false, false, false, true); // E - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 5, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, Basys3_Master.xdc]", 5, false, false, false, false, false, true); // E - Double Click
+selectCodeEditor("Basys3_Master.xdc", 453, 166); // ad
+selectCodeEditor("Basys3_Master.xdc", 548, 185); // ad
+selectCodeEditor("Basys3_Master.xdc", 913, 215); // ad
+selectCodeEditor("Basys3_Master.xdc", 843, 190); // ad
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module.v", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "random.v", 1); // o
+selectCodeEditor("random.v", 273, 72); // ad
+selectCodeEditor("random.v", 349, 76); // ad
+selectCodeEditor("random.v", 369, 83); // ad
+selectCodeEditor("random.v", 350, 60); // ad
+selectCodeEditor("random.v", 454, 71); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 59m:03s
+selectCodeEditor("random.v", 441, 69); // ad
+selectCodeEditor("random.v", 381, 75); // ad
+// Elapsed Time for: 'L.f': 59m:05s
+selectCodeEditor("random.v", 307, 35); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 59m:09s
+// Elapsed Time for: 'L.f': 59m:11s
+// Elapsed time: 13 seconds
+selectCodeEditor("random.v", 209, 182); // ad
+selectCodeEditor("random.v", 206, 173); // ad
+selectCodeEditor("random.v", 217, 171); // ad
+selectCodeEditor("random.v", 406, 167); // ad
+// Elapsed time: 19 seconds
+selectCodeEditor("random.v", 390, 217); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("random.v", 353, 101); // ad
+selectCodeEditor("random.v", 407, 109); // ad
+// Elapsed Time for: 'L.f': 59m:45s
+selectCodeEditor("random.v", 419, 125); // ad
+selectCodeEditor("random.v", 326, 81); // ad
+selectCodeEditor("random.v", 334, 128); // ad
+// Elapsed Time for: 'L.f': 59m:47s
+selectCodeEditor("random.v", 43, 143); // ad
+selectCodeEditor("random.v", 167, 182); // ad
+selectCodeEditor("random.v", 40, 162); // ad
+selectCodeEditor("random.v", 133, 175); // ad
+selectCodeEditor("random.v", 89, 181); // ad
+selectCodeEditor("random.v", 267, 300); // ad
+selectCodeEditor("random.v", 136, 219); // ad
+selectCodeEditor("random.v", 312, 292); // ad
+selectCodeEditor("random.v", 179, 244); // ad
+typeControlKey(null, null, 'z');
+selectCodeEditor("random.v", 207, 291); // ad
+selectCodeEditor("random.v", 134, 243); // ad
+selectCodeEditor("random.v", 313, 308); // ad
+selectCodeEditor("random.v", 127, 194); // ad
+selectCodeEditor("random.v", 84, 317); // ad
+selectCodeEditor("random.v", 129, 187); // ad
+selectCodeEditor("random.v", 75, 156); // ad
+selectCodeEditor("random.v", 91, 166); // ad
+selectCodeEditor("random.v", 166, 332); // ad
+selectCodeEditor("random.v", 176, 315); // ad
+selectCodeEditor("random.v", 223, 326); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:00m:15s
+typeControlKey(null, null, 'z');
+// Elapsed Time for: 'L.f': 01h:00m:17s
+selectCodeEditor("random.v", 218, 312); // ad
+// Elapsed time: 12 seconds
+selectCodeEditor("random.v", 250, 241); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module.v", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "random.v", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Master.xdc", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "random.v", 1); // o
+selectCodeEditor("random.v", 243, 295); // ad
+selectCodeEditor("random.v", 309, 347); // ad
+selectCodeEditor("random.v", 276, 366); // ad
+selectCodeEditor("random.v", 110, 116); // ad
+selectCodeEditor("random.v", 410, 118); // ad
+selectCodeEditor("random.v", 415, 117); // ad
+selectCodeEditor("random.v", 419, 161); // ad
+// Elapsed time: 34 seconds
+selectCodeEditor("random.v", 600, 183); // ad
+// Elapsed time: 29 seconds
+selectCodeEditor("random.v", 947, 166); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectCodeEditor("random.v", 748, 241); // ad
+// Elapsed Time for: 'L.f': 01h:02m:17s
+selectCodeEditor("random.v", 614, 320); // ad
+selectCodeEditor("random.v", 578, 343); // ad
+selectCodeEditor("random.v", 565, 331); // ad
+// Elapsed Time for: 'L.f': 01h:02m:19s
+selectCodeEditor("random.v", 543, 306); // ad
+selectCodeEditor("random.v", 200, 301); // ad
+selectCodeEditor("random.v", 91, 170); // ad
+selectCodeEditor("random.v", 96, 332); // ad
+selectCodeEditor("random.v", 89, 159); // ad
+selectCodeEditor("random.v", 250, 277); // ad
+selectCodeEditor("random.v", 240, 254); // ad
+selectCodeEditor("random.v", 241, 242); // ad
+selectCodeEditor("random.v", 241, 296); // ad
+selectCodeEditor("random.v", 86, 170); // ad
+selectCodeEditor("random.v", 273, 229); // ad
+selectCodeEditor("random.v", 195, 185); // ad
+selectCodeEditor("random.v", 253, 202); // ad
+// Elapsed time: 38 seconds
+selectCodeEditor("random.v", 199, 169); // ad
+selectCodeEditor("random.v", 210, 197); // ad
+selectCodeEditor("random.v", 213, 224); // ad
+selectCodeEditor("random.v", 214, 257); // ad
+// Elapsed time: 40 seconds
+selectCodeEditor("random.v", 220, 301); // ad
+selectCodeEditor("random.v", 205, 167); // ad
+selectCodeEditor("random.v", 231, 223); // ad
+selectCodeEditor("random.v", 189, 167); // ad
+selectCodeEditor("random.v", 241, 241); // ad
+selectCodeEditor("random.v", 218, 266); // ad
+selectCodeEditor("random.v", 140, 257); // ad
+selectCodeEditor("random.v", 167, 264); // ad
+// HMemoryUtils.trashcanNow. Engine heap size: 1,120 MB. GUI used memory: 63 MB. Current time: 11/24/23, 12:17:26 PM ICT
+// Elapsed time: 599 seconds
+selectCodeEditor("random.v", 298, 307); // ad
+selectCodeEditor("random.v", 274, 300); // ad
+// Elapsed time: 15 seconds
+selectCodeEditor("random.v", 280, 290); // ad
+selectCodeEditor("random.v", 280, 290); // ad
+// Elapsed time: 201 seconds
+selectCodeEditor("random.v", 323, 309); // ad
+selectCodeEditor("random.v", 239, 353); // ad
+typeControlKey((HResource) null, "random.v", 'v'); // ad
+selectCodeEditor("random.v", 165, 37); // ad
+selectCodeEditor("random.v", 175, 37); // ad
+selectCodeEditor("random.v", 113, 224); // ad
+// Elapsed time: 15 seconds
+selectCodeEditor("random.v", 112, 32); // ad
+selectCodeEditor("random.v", 111, 63); // ad
+selectCodeEditor("random.v", 124, 98); // ad
+selectCodeEditor("random.v", 121, 120); // ad
+selectCodeEditor("random.v", 110, 224); // ad
+selectCodeEditor("random.v", 114, 237); // ad
+// Elapsed time: 11 seconds
+selectCodeEditor("random.v", 164, 247, false, false, false, true, false); // ad - Popup Trigger
+selectCodeEditor("random.v", 61, 288, false, false, false, true, false); // ad - Popup Trigger
+selectCodeEditor("random.v", 15, 280); // ad
+// [GUI Memory]: 165 MB (+6921kb) [01:19:19]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,128 MB. GUI used memory: 54 MB. Current time: 11/24/23, 12:27:57 PM ICT
+// Elapsed time: 19 seconds
+selectCodeEditor("random.v", 48, 87); // ad
+selectCodeEditor("random.v", 83, 61); // ad
+selectCodeEditor("random.v", 152, 137); // ad
+selectCodeEditor("random.v", 152, 137); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:19m:18s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:19m:20s
+selectCodeEditor("random.v", 438, 64); // ad
+// Elapsed Time for: 'L.f': 01h:19m:22s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+selectCodeEditor("random.v", 451, 64); // ad
+// Elapsed Time for: 'L.f': 01h:19m:24s
+selectCodeEditor("random.v", 187, 109); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:19m:26s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 01h:19m:28s
+selectCodeEditor("random.v", 133, 270); // ad
+// Elapsed Time for: 'L.f': 01h:19m:30s
+selectCodeEditor("random.v", 142, 288); // ad
+selectCodeEditor("random.v", 433, 116); // ad
+selectCodeEditor("random.v", 172, 241); // ad
+selectCodeEditor("random.v", 186, 267); // ad
+selectCodeEditor("random.v", 132, 222); // ad
+selectCodeEditor("random.v", 111, 270); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01h:19m:44s
+// Elapsed Time for: 'L.f': 01h:19m:46s
+selectCodeEditor("random.v", 169, 214, false, false, false, true, false); // ad - Popup Trigger
+// Elapsed time: 23 seconds
+selectCodeEditor("random.v", 826, 187); // ad
+// Elapsed time: 11 seconds
+selectCodeEditor("random.v", 364, 121); // ad
+selectCodeEditor("random.v", 233, 159); // ad
+selectCodeEditor("random.v", 354, 149); // ad
+selectCodeEditor("random.v", 194, 165); // ad
+selectCodeEditor("random.v", 232, 180); // ad
+selectCodeEditor("random.v", 94, 150); // ad
+selectCodeEditor("random.v", 136, 146); // ad
+selectCodeEditor("random.v", 162, 150); // ad
+// WARNING: HEventQueue.dispatchEvent() is taking  3927730 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 62 MB. Current time: 11/24/23, 1:36:44 PM ICT
+// WARNING: HEventQueue.dispatchEvent() is taking  24297 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2706 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  116690 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  156311 ms.
+// Elapsed time: 5514 seconds
+selectCodeEditor("random.v", 218, 211); // ad
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Master.xdc", 3); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "random.v", 1); // o
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module.v", 1); // o
+selectCodeEditor("top_module.v", 271, 195); // ad
+selectCodeEditor("top_module.v", 290, 227); // ad
+selectCodeEditor("top_module.v", 265, 206); // ad
+selectCodeEditor("top_module.v", 284, 224); // ad
+selectCodeEditor("top_module.v", 293, 234); // ad
+selectCodeEditor("top_module.v", 293, 234); // ad
+selectCodeEditor("top_module.v", 49, 282); // ad
+selectCodeEditor("top_module.v", 38, 269); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 02h:52m:54s
+// Elapsed Time for: 'L.f': 02h:52m:56s
+selectCodeEditor("top_module.v", 109, 64); // ad
+selectCodeEditor("top_module.v", 205, 101); // ad
+// Elapsed time: 13 seconds
+selectCodeEditor("top_module.v", 400, 128); // ad
+// HMemoryUtils.trashcanNow. Engine heap size: 1,146 MB. GUI used memory: 63 MB. Current time: 11/24/23, 2:06:44 PM ICT
+// Elapsed time: 637 seconds
+selectCodeEditor("top_module.v", 334, 78); // ad
+selectCodeEditor("top_module.v", 297, 82); // ad
+// Elapsed time: 55 seconds
+selectCodeEditor("top_module.v", 284, 182); // ad
+selectCodeEditor("top_module.v", 316, 216); // ad
+selectCodeEditor("top_module.v", 295, 200); // ad
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Master.xdc", 2); // o
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module.v", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Basys3_Master.xdc", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_module.v", 1); // o
