@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Fri Nov 24 14:14:23 2023
+# Process ID: 7592
+# Current directory: C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10316 C:\Users\CPE\Desktop\CPE222\verilog_Led_game\LED GAME\LED GAME.xpr
+# Log file: C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/vivado.log
+# Journal file: C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME\vivado.jou
+# Running On: DESKTOP-LFUI70J, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 10, Host memory: 16847 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.xpr}
+update_compile_order -fileset sources_1
