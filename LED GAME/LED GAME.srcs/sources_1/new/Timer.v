@@ -48,6 +48,7 @@ module Timer(
     reg [3:0] second;
     reg [3:0] third;
     reg [3:0] fourth;
+    
     // start from 30 seconds
     initial first = 0;
     initial second = 3;
@@ -60,6 +61,7 @@ module Timer(
     tff_module tffu (btnU,clock,pressedU);
     tff_module tffd (btnD,clock,pressedD);     
   
+    // is_timeout behavior is 1 when not started, and timeout. 
     always @(posedge elapsed)
     begin
     // Incrementing time

@@ -88,6 +88,7 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
   {D:/Study/CPE 222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/Timer.v}
+  {D:/Study/CPE 222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v}
   {D:/Study/CPE 222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/top_module.v}
 }
 OPTRACE "Adding files" END { }

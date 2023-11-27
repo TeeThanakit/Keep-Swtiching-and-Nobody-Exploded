@@ -24,6 +24,9 @@ module top_module(
     output [15:0] led,
     output [6:0] seg,
     output [3:0] an
-    );   
-    Timer T1(btnC,btnU,btnD,clock,led[10],seg,an);
+    );
+    wire current_mode;
+    wire is_timeout;
+    Timer T1(btnC,btnU,btnD,clock,is_timeout,seg,an);
+    difficulty_game_mode G1(btnC,btnL,btnR,clock,led,current_mode);
 endmodule
