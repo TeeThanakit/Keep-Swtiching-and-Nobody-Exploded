@@ -18,15 +18,15 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-module tff_module (
-  input T,       // T input
-  input clk,     // Clock input
-  output reg Q   // Output
-);
-  always @(posedge clk) begin
-    Q <= T ? ~Q : Q;  // Toggle the output based on T input
-  end
-endmodule
+//module tff_module (
+//  input T,       // T input
+//  input clk,     // Clock input
+//  output reg Q   // Output
+//);
+//  always @(posedge clk) begin
+//    Q <= T ? ~Q : Q;  // Toggle the output based on T input
+//  end
+//endmodule
 
 module difficulty_game_mode(
   input btnC,
@@ -37,86 +37,130 @@ module difficulty_game_mode(
   output reg [1:0] current_mode
 //  output out1
 );  
+
   // setting buttons before the game
-  reg pressedC, pressedL, pressedR;
-  reg is_selected;  // Declare is_start signal
-
-  tff_module tffc (is_selected, clock, pressedC);
-  tff_module tffu (btnL, clock, pressedL);
-  tff_module tffd (btnR, clock, pressedR);
-
-  //initial begin
-    //current_mode = 2'b01;
-    //$display("Initialized value: %d", current_mode);
-  //end
-
-  always @(posedge clock) 
-    if (pressedL) 
-    begin
-//      if (current_mode == 2'b01)
-//      begin
-//        current_mode = 2'b11;
-//      end
-//      else
-      //begin
-        current_mode = current_mode - 2'b01;
-      //end
+  wire pressedC, pressedL, pressedR;
+//  tff_module tffl (btnL, clock, pressedL);
+//  tff_module tffr (btnR, clock, pressedR);
+    
+  debouncedbutton dbbl (btnL, clock, pressedL);
+  debouncedbutton dbbr (btnR, clock, pressedR);
+  
+  initial current_mode = 2'b01;
+  always @ (posedge clock)
+    if(pressedL) begin
+        if (current_mode == 2'b01) begin //mode 1
+            current_mode <= 2'b11; //mode 1 to mode 3    
+            led[15] = 1'b1;
+          led[14] = 1'b1;
+          led[13] = 1'b1;
+          led[12] = 1'b1;
+          led[11] = 1'b1;
+          led[10] = 1'b1;
+          led[9] = 1'b1;
+          led[8] = 1'b1;
+          led[7] = 1'b1;
+          led[6] = 1'b1;
+          led[5] = 1'b1;
+          led[4] = 1'b1;
+          led[3] = 1'b1;
+          led[2] = 1'b1;
+          led[1] = 1'b1;
+        end
+        else if (current_mode == 2'b10) begin
+            current_mode <= 2'b01; 
+            led[15] = 1'b1;
+            led[14] = 1'b1;
+          led[13] = 1'b1;
+          led[12] = 1'b1;
+          led[11] = 1'b1;
+          led[10] = 1'b0;
+          led[9] = 1'b0;
+          led[8] = 1'b0;
+          led[7] = 1'b0;
+          led[6] = 1'b0;
+          led[5] = 1'b0;
+          led[4] = 1'b0;
+          led[3] = 1'b0;
+          led[2] = 1'b0;
+          led[1] = 1'b0;
+            
+        end
+        else if (current_mode == 2'b11) begin
+            current_mode <= 2'b10; 
+            led[15] = 1'b1;
+          led[14] = 1'b1;
+          led[13] = 1'b1;
+          led[12] = 1'b1;
+          led[11] = 1'b1;
+          led[10] = 1'b1;
+          led[9] = 1'b1;
+          led[8] = 1'b1;
+          led[7] = 1'b1;
+          led[6] = 1'b1;
+          led[5] = 1'b0;
+          led[4] = 1'b0;
+          led[3] = 1'b0;
+          led[2] = 1'b0;
+          led[1] = 1'b0; 
+        end
     end
-    else if (pressedR)
-    begin
-        if(current_mode == 2'b11)
-            current_mode = 2'b01;
-        else
-            current_mode = current_mode + 2'b01;
+    else if(pressedR) begin
+        if (current_mode == 2'b01) begin
+            current_mode <= 2'b10;
+            led[15] = 1'b1;
+          led[14] = 1'b1;
+          led[13] = 1'b1;
+          led[12] = 1'b1;
+          led[11] = 1'b1;
+          led[10] = 1'b1;
+          led[9] = 1'b1;
+          led[8] = 1'b1;
+          led[7] = 1'b1;
+          led[6] = 1'b1;
+          led[5] = 1'b0;
+          led[4] = 1'b0;
+          led[3] = 1'b0;
+          led[2] = 1'b0;
+          led[1] = 1'b0;    
+            
+        end
+        else if (current_mode == 2'b10) begin
+            current_mode <= 2'b11; 
+            led[15] = 1'b1;
+          led[14] = 1'b1;
+          led[13] = 1'b1;
+          led[12] = 1'b1;
+          led[11] = 1'b1;
+          led[10] = 1'b1;
+          led[9] = 1'b1;
+          led[8] = 1'b1;
+          led[7] = 1'b1;
+          led[6] = 1'b1;
+          led[5] = 1'b1;
+          led[4] = 1'b1;
+          led[3] = 1'b1;
+          led[2] = 1'b1;
+          led[1] = 1'b1;
+        end
+        else if (current_mode == 2'b11) begin
+            current_mode <= 2'b01; 
+            led[15] = 1'b1;
+            led[14] = 1'b1;
+          led[13] = 1'b1;
+          led[12] = 1'b1;
+          led[11] = 1'b1;
+          led[10] = 1'b0;
+          led[9] = 1'b0;
+          led[8] = 1'b0;
+          led[7] = 1'b0;
+          led[6] = 1'b0;
+          led[5] = 1'b0;
+          led[4] = 1'b0;
+          led[3] = 1'b0;
+          led[2] = 1'b0;
+          led[1] = 1'b0;
+        end
     end
-  
-  // Activate LEDs based on current_mode
-  always @(current_mode)
-  begin
-    case (current_mode)
-      2'b01: 
-      begin
-      led[15] = 1'b1;
-      led[14] = 1'b1;
-      led[13] = 1'b1;
-      led[12] = 1'b1;
-      led[11] = 1'b1;
-      end  
-       //LD11 on
-      2'b10: 
-      begin
-      led[15] = 1'b1;
-      led[14] = 1'b1;
-      led[13] = 1'b1;
-      led[12] = 1'b1;
-      led[11] = 1'b1;
-      led[10] = 1'b1;
-      led[9] = 1'b1;
-      led[8] = 1'b1;
-      led[7] = 1'b1;
-      led[6] = 1'b1;
-      end
-      2'b11:
-      begin
-      led[15] = 1'b1;
-      led[14] = 1'b1;
-      led[13] = 1'b1;
-      led[12] = 1'b1;
-      led[11] = 1'b1;
-      led[10] = 1'b1;
-      led[9] = 1'b1;
-      led[8] = 1'b1;
-      led[7] = 1'b1;
-      led[6] = 1'b1;
-      led[5] = 1'b1;
-      led[4] = 1'b1;
-      led[3] = 1'b1;
-      led[2] = 1'b1;
-      led[1] = 1'b1;
-      end
-      //default: led = 16'h0000; // All LEDs off for unknown mode
-    endcase
-  end
-  
-  
+    
 endmodule

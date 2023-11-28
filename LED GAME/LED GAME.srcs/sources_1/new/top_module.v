@@ -28,5 +28,5 @@ module top_module(
     wire current_mode;
     wire is_timeout;
     Timer T1(btnC,btnU,btnD,clock,is_timeout,seg,an);
-    difficulty_game_mode G1(btnC,btnL,btnR,clock,led,current_mode);
+    difficulty_game_mode G(btnC,btnL,btnR,clock,led,current_mode);
 endmodule
