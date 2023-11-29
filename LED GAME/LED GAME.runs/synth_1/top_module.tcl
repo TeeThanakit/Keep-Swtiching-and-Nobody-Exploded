@@ -70,6 +70,12 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param tcl.statsThreshold 360
+set_param checkpoint.writeSynthRtdsInDcp 1
+set_param chipscope.maxJobs 4
+set_param synth.incrementalSynthesisCache C:/Users/witpc/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-19864-DESKTOP-UERN9I1/incrSyn
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -86,7 +92,6 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
   {C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/LED GAME/LED GAME.srcs/sources_1/new/Timer.v}
-  {C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/LED GAME/LED GAME.srcs/sources_1/new/debouncedbutton.v}
   {C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v}
   {C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/LED GAME/LED GAME.srcs/sources_1/new/ledcontroller.v}
   {C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/LED GAME/LED GAME.srcs/sources_1/new/top_module.v}

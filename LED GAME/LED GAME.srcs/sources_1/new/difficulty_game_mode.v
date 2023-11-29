@@ -18,39 +18,29 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-//module tff_module (
-//  input T,       // T input
-//  input clk,     // Clock input
-//  output reg Q   // Output
-//);
-//  always @(posedge clk) begin
-//    Q <= T ? ~Q : Q;  // Toggle the output based on T input
-//  end
-//endmodule
-
 module difficulty_game_mode(
   input btnC,
   input btnL,
   input btnR,
   input clock,  // Add clock input
   input [15:0] sw,
-  output reg [15:0] led,
   output reg [1:0] current_mode
 );  
-  wire pressedL, pressedR;
+  //**use debounced after sim**
+  //wire pressedL, pressedR;
     
-  debouncedbutton dbbl (btnL, clock, pressedL);
-  debouncedbutton dbbr (btnR, clock, pressedR);
+  //debouncedbutton dbbl (btnL, clock, pressedL);
+  //debouncedbutton dbbr (btnR, clock, pressedR);
   
   initial current_mode = 2'b01;
   always @ (posedge clock) begin
-    if (pressedL) begin
+    if (btnL) begin
       case (current_mode)
         2'b01: current_mode <= 2'b11;
         2'b10: current_mode <= 2'b01;
         2'b11: current_mode <= 2'b10;
       endcase
-    end else if (pressedR) begin
+    end else if (btnR) begin
       case (current_mode)
         2'b01: current_mode <= 2'b10;
         2'b10: current_mode <= 2'b11;

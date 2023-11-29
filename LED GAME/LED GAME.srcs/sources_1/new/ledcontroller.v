@@ -18,15 +18,14 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-
-
 module ledcontroller( 
     input clock,
     input [1:0] current_mode,
     input is_timeout,
     output reg [15:0] led
     );
-always @ (current_mode) begin
+    
+    always @ (current_mode) begin
       case (current_mode)
         2'b01: begin
           led[15] = 1'b1;

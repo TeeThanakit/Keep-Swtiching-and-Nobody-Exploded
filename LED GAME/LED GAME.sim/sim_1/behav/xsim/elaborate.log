@@ -19,9 +19,6 @@ Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.tff_module
 Compiling module xil_defaultlib.Timer
-Compiling module xil_defaultlib.clock_div
-Compiling module xil_defaultlib.my_dff
-Compiling module xil_defaultlib.debouncedbutton
 Compiling module xil_defaultlib.difficulty_game_mode
 Compiling module xil_defaultlib.ledcontroller
 Compiling module xil_defaultlib.top_module
