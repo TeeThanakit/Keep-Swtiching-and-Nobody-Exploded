@@ -26,14 +26,9 @@ module difficulty_game_mode(
   input [15:0] sw,
   output reg [1:0] current_mode
 );  
-  //**use debounced after sim**
-  //wire pressedL, pressedR;
-    
-  //debouncedbutton dbbl (btnL, clock, pressedL);
-  //debouncedbutton dbbr (btnR, clock, pressedR);
-  
+
   initial current_mode = 2'b01;
-  always @ (posedge clock) begin
+  always @ (btnL or btnR) begin
     if (btnL) begin
       case (current_mode)
         2'b01: current_mode <= 2'b11;

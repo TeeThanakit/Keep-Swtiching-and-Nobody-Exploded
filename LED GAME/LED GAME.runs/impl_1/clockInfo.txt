@@ -1,6 +1,6 @@
 -------------------------------------
 | Tool Version : Vivado v.2023.2
-| Date         : Thu Nov 30 02:16:59 2023
+| Date         : Thu Nov 30 03:07:15 2023
 | Host         : DESKTOP-UERN9I1
 | Design       : design_1
 | Device       : xc7a35t-cpg236-1--

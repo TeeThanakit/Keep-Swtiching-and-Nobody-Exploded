@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Thu Nov 30 02:17:16 2023
+| Date         : Thu Nov 30 03:07:31 2023
 | Host         : DESKTOP-UERN9I1 running 64-bit major release  (build 9200)
 | Command      : report_drc -file top_module_drc_routed.rpt -pb top_module_drc_routed.pb -rpx top_module_drc_routed.rpx
 | Design       : top_module
@@ -24,11 +24,11 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 1
+             Violations found: 2
 +----------+----------+-------------------+------------+
 | Rule     | Severity | Description       | Violations |
 +----------+----------+-------------------+------------+
-| PDRC-153 | Warning  | Gated clock check | 1          |
+| PDRC-153 | Warning  | Gated clock check | 2          |
 +----------+----------+-------------------+------------+
 
 2. REPORT DETAILS
@@ -36,6 +36,11 @@ Table of Contents
 PDRC-153#1 Warning
 Gated clock check  
 Net G/E[0] is a gated clock net sourced by a combinational pin G/led_reg[10]_i_1/O, cell G/led_reg[10]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#2 Warning
+Gated clock check  
+Net G/current_mode_n_1 is a gated clock net sourced by a combinational pin G/current_mode/O, cell G/current_mode. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 

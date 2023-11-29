@@ -124,10 +124,9 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param tcl.statsThreshold 360
   set_param checkpoint.writeSynthRtdsInDcp 1
   set_param chipscope.maxJobs 4
-  set_param synth.incrementalSynthesisCache C:/Users/witpc/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-19864-DESKTOP-UERN9I1/incrSyn
+  set_param synth.incrementalSynthesisCache {C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/LED GAME/.Xil/Vivado-19120-DESKTOP-UERN9I1/incrSyn}
   set_param runs.launchOptions { -jobs 8  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tcpg236-1
