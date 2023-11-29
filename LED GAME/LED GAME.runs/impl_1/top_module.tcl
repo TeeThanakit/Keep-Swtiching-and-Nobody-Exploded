@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "D:/Study/CPE 222/verilog_Led_game/LED GAME/LED GAME.runs/impl_1/top_module.tcl"
+  variable script "C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.runs/impl_1/top_module.tcl"
   variable category "vivado_impl"
 }
 
@@ -115,6 +115,7 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "impl_1" START { ROLLUP_1 }
 OPTRACE "Phase: Init Design" START { ROLLUP_AUTO }
@@ -122,24 +123,24 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 4
+  set_param chipscope.maxJobs 3
   set_param xicom.use_bs_reader 1
-  set_param runs.launchOptions { -jobs 8  }
+  set_param runs.launchOptions { -jobs 6  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir {D:/Study/CPE 222/verilog_Led_game/LED GAME/LED GAME.cache/wt} [current_project]
-  set_property parent.project_path {D:/Study/CPE 222/verilog_Led_game/LED GAME/LED GAME.xpr} [current_project]
-  set_property ip_output_repo {{D:/Study/CPE 222/verilog_Led_game/LED GAME/LED GAME.cache/ip}} [current_project]
+  set_property webtalk.parent_dir {C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet {{D:/Study/CPE 222/verilog_Led_game/LED GAME/LED GAME.runs/synth_1/top_module.dcp}}
+  add_files -quiet {{C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.runs/synth_1/top_module.dcp}}
 OPTRACE "read constraints: implementation" START { }
-  read_xdc {{D:/Study/CPE 222/verilog_Led_game/LED GAME/LED GAME.srcs/constrs_1/new/Basys3_verilog_led.xdc}}
+  read_xdc {{C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/constrs_1/new/Basys3_verilog_led.xdc}}
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

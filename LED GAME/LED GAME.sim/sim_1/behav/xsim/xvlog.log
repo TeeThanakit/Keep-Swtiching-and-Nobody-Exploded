@@ -1,0 +1,29 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/Timer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tff_module
+INFO: [VRFC 10-311] analyzing module Timer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/debouncedbutton.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncedbutton
+INFO: [VRFC 10-311] analyzing module clock_div
+INFO: [VRFC 10-311] analyzing module my_dff
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module difficulty_game_mode
+ERROR: [VRFC 10-4982] syntax error near '<=' [C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v:50]
+ERROR: [VRFC 10-4982] syntax error near '=' [C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v:51]
+ERROR: [VRFC 10-4982] syntax error near '=' [C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v:52]
+ERROR: [VRFC 10-4982] syntax error near '=' [C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v:53]
+ERROR: [VRFC 10-4982] syntax error near '=' [C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v:54]
+ERROR: [VRFC 10-4982] syntax error near '=' [C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v:55]
+ERROR: [VRFC 10-4982] syntax error near '=' [C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v:56]
+ERROR: [VRFC 10-4982] syntax error near '=' [C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v:57]
+ERROR: [VRFC 10-4982] syntax error near '=' [C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v:58]
+ERROR: [VRFC 10-4982] syntax error near '=' [C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v:59]
+ERROR: [VRFC 10-4982] syntax error near '=' [C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v:60]
+ERROR: [VRFC 10-4982] syntax error near '=' [C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v:61]
+ERROR: [VRFC 10-4982] syntax error near '=' [C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v:62]
+ERROR: [VRFC 10-4982] syntax error near '=' [C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v:63]
+ERROR: [VRFC 10-4982] syntax error near '=' [C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v:64]
+ERROR: [VRFC 10-4982] syntax error near '=' [C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v:65]
+ERROR: [VRFC 10-4982] syntax error near '<=' [C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v:68]
+ERROR: [VRFC 10-4982] syntax error near '=' [C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v:69]
+ERROR: [VRFC 10-4982] syntax error near '=' [C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v:70]
+INFO: [#UNDEF] Sorry, too many errors..

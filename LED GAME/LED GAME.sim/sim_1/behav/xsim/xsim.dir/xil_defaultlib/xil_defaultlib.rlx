@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/Timer.v,1701271387,verilog,,C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/debouncedbutton.v,,Timer;tff_module,,,,,,,,
+C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/debouncedbutton.v,1701243486,verilog,,C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v,,clock_div;debouncedbutton;my_dff,,,,,,,,
+C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v,1701272446,verilog,,C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/top_module.v,,difficulty_game_mode,,,,,,,,
+C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/ledcontroller.v,1701268887,verilog,,C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/top_module.v,,ledcontroller,,,,,,,,
+C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/top_module.v,1701269762,verilog,,,,top_module,,,,,,,,

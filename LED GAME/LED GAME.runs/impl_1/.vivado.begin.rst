@@ -63,3 +63,23 @@
     <Process Command="vivado.bat" Owner="woosh" Host="WOOSH" Pid="12320" HostCore="16" HostMemory="016487870464">
     </Process>
 </ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="CPE" Host="DESKTOP-LFUI70J" Pid="19068" HostCore="12" HostMemory="016847527936">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="CPE" Host="DESKTOP-LFUI70J" Pid="20560" HostCore="12" HostMemory="016847527936">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="CPE" Host="DESKTOP-LFUI70J" Pid="23648" HostCore="12" HostMemory="016847527936">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="CPE" Host="DESKTOP-LFUI70J" Pid="5628" HostCore="12" HostMemory="016847527936">
+    </Process>
+</ProcessHandle>
