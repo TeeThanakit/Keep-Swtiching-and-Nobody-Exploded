@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Wed Nov 29 23:11:22 2023
-| Host         : DESKTOP-LFUI70J running 64-bit major release  (build 9200)
+| Date         : Thu Nov 30 01:23:07 2023
+| Host         : DESKTOP-UERN9I1 running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file top_module_timing_summary_routed.rpt -pb top_module_timing_summary_routed.pb -rpx top_module_timing_summary_routed.rpx -warn_on_violation
 | Design       : top_module
 | Device       : 7a35t-cpg236
@@ -1285,7 +1285,7 @@ Slack (MET) :             0.274ns  (arrival time - required time)
     SLICE_X1Y13          FDRE                                         r  G/current_mode_reg[1]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X1Y13          FDRE (Prop_fdre_C_Q)         0.141     1.615 r  G/current_mode_reg[1]/Q
-                         net (fo=5, routed)           0.179     1.795    G/current_mode_reg_n_1_[1]
+                         net (fo=5, routed)           0.179     1.795    G/current_mode_reg[1]_0[0]
     SLICE_X1Y13          LUT6 (Prop_lut6_I4_O)        0.045     1.840 r  G/current_mode[1]_i_1/O
                          net (fo=1, routed)           0.000     1.840    G/current_mode[1]_i_1_n_1
     SLICE_X1Y13          FDRE                                         r  G/current_mode_reg[1]/D
@@ -1387,7 +1387,7 @@ Slack (MET) :             0.275ns  (arrival time - required time)
     SLICE_X1Y13          FDRE                                         r  G/current_mode_reg[1]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X1Y13          FDRE (Prop_fdre_C_Q)         0.141     1.615 r  G/current_mode_reg[1]/Q
-                         net (fo=5, routed)           0.181     1.797    G/current_mode_reg_n_1_[1]
+                         net (fo=5, routed)           0.181     1.797    G/current_mode_reg[1]_0[0]
     SLICE_X1Y13          LUT6 (Prop_lut6_I4_O)        0.045     1.842 r  G/current_mode[0]_i_1/O
                          net (fo=1, routed)           0.000     1.842    G/current_mode[0]_i_1_n_1
     SLICE_X1Y13          FDRE                                         r  G/current_mode_reg[0]/D
@@ -1688,7 +1688,7 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 G/led_reg[10]/G
+  Source:                 le/led_reg[10]/G
                             (positive level-sensitive latch)
   Destination:            led[9]
                             (output port)
@@ -1699,8 +1699,8 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X2Y13          LDCE                         0.000     0.000 r  G/led_reg[10]/G
-    SLICE_X2Y13          LDCE (EnToQ_ldce_G_Q)        0.829     0.829 r  G/led_reg[10]/Q
+    SLICE_X2Y13          LDCE                         0.000     0.000 r  le/led_reg[10]/G
+    SLICE_X2Y13          LDCE (EnToQ_ldce_G_Q)        0.829     0.829 r  le/led_reg[10]/Q
                          net (fo=5, routed)           4.450     5.279    led_OBUF[6]
     V3                   OBUF (Prop_obuf_I_O)         3.508     8.787 r  led_OBUF[9]_inst/O
                          net (fo=0)                   0.000     8.787    led[9]
@@ -1708,7 +1708,7 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 G/led_reg[10]/G
+  Source:                 le/led_reg[10]/G
                             (positive level-sensitive latch)
   Destination:            led[10]
                             (output port)
@@ -1719,8 +1719,8 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X2Y13          LDCE                         0.000     0.000 r  G/led_reg[10]/G
-    SLICE_X2Y13          LDCE (EnToQ_ldce_G_Q)        0.829     0.829 r  G/led_reg[10]/Q
+    SLICE_X2Y13          LDCE                         0.000     0.000 r  le/led_reg[10]/G
+    SLICE_X2Y13          LDCE (EnToQ_ldce_G_Q)        0.829     0.829 r  le/led_reg[10]/Q
                          net (fo=5, routed)           4.306     5.135    led_OBUF[6]
     W3                   OBUF (Prop_obuf_I_O)         3.525     8.660 r  led_OBUF[10]_inst/O
                          net (fo=0)                   0.000     8.660    led[10]
@@ -1728,7 +1728,7 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 G/led_reg[5]/G
+  Source:                 le/led_reg[5]/G
                             (positive level-sensitive latch)
   Destination:            led[1]
                             (output port)
@@ -1739,8 +1739,8 @@ Slack:                    inf
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
-    SLICE_X2Y13          LDCE                         0.000     0.000 r  G/led_reg[5]/G
-    SLICE_X2Y13          LDCE (EnToQ_ldce_G_Q)        0.829     0.829 r  G/led_reg[5]/Q
+    SLICE_X2Y13          LDCE                         0.000     0.000 r  le/led_reg[5]/G
+    SLICE_X2Y13          LDCE (EnToQ_ldce_G_Q)        0.829     0.829 r  le/led_reg[5]/Q
                          net (fo=5, routed)           2.705     3.534    led_OBUF[1]
     E19                  OBUF (Prop_obuf_I_O)         3.530     7.064 r  led_OBUF[1]_inst/O
                          net (fo=0)                   0.000     7.064    led[1]
@@ -2342,7 +2342,7 @@ Min Delay Paths
 Slack:                    inf
   Source:                 G/current_mode_reg[1]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            G/led_reg[10]/D
+  Destination:            le/led_reg[10]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
   Data Path Delay:        0.325ns  (logic 0.141ns (43.333%)  route 0.184ns (56.667%))
@@ -2366,8 +2366,8 @@ Slack:                    inf
     SLICE_X1Y13          FDRE                                         r  G/current_mode_reg[1]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X1Y13          FDRE (Prop_fdre_C_Q)         0.141     1.615 r  G/current_mode_reg[1]/Q
-                         net (fo=5, routed)           0.184     1.800    G/current_mode_reg_n_1_[1]
-    SLICE_X2Y13          LDCE                                         r  G/led_reg[10]/D
+                         net (fo=5, routed)           0.184     1.800    le/D[1]
+    SLICE_X2Y13          LDCE                                         r  le/led_reg[10]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
@@ -2476,7 +2476,7 @@ Slack:                    inf
 Slack:                    inf
   Source:                 G/current_mode_reg[0]/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            G/led_reg[5]/D
+  Destination:            le/led_reg[5]/D
   Path Group:             (none)
   Path Type:              Min at Fast Process Corner
   Data Path Delay:        0.511ns  (logic 0.186ns (36.402%)  route 0.325ns (63.598%))
@@ -2500,10 +2500,10 @@ Slack:                    inf
     SLICE_X1Y13          FDRE                                         r  G/current_mode_reg[0]/C
   -------------------------------------------------------------------    -------------------
     SLICE_X1Y13          FDRE (Prop_fdre_C_Q)         0.141     1.615 r  G/current_mode_reg[0]/Q
-                         net (fo=4, routed)           0.154     1.770    G/current_mode_reg_n_1_[0]
+                         net (fo=4, routed)           0.154     1.770    G/current_mode[0]
     SLICE_X2Y13          LUT2 (Prop_lut2_I0_O)        0.045     1.815 r  G/led_reg[5]_i_1/O
-                         net (fo=1, routed)           0.171     1.985    G/led_reg[5]_i_1_n_1
-    SLICE_X2Y13          LDCE                                         r  G/led_reg[5]/D
+                         net (fo=1, routed)           0.171     1.985    le/D[0]
+    SLICE_X2Y13          LDCE                                         r  le/led_reg[5]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf

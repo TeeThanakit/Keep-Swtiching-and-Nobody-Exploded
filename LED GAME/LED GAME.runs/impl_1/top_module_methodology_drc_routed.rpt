@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Wed Nov 29 23:11:22 2023
-| Host         : DESKTOP-LFUI70J running 64-bit major release  (build 9200)
+| Date         : Thu Nov 30 01:23:07 2023
+| Host         : DESKTOP-UERN9I1 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file top_module_methodology_drc_routed.rpt -pb top_module_methodology_drc_routed.pb -rpx top_module_methodology_drc_routed.rpx
 | Design       : top_module
 | Device       : xc7a35tcpg236-1
@@ -197,12 +197,12 @@ Related violations: <none>
 
 TIMING-20#1 Warning
 Non-clocked latch  
-The latch G/led_reg[10] cannot be properly analyzed as its control pin G/led_reg[10]/G is not reached by a timing clock
+The latch le/led_reg[10] cannot be properly analyzed as its control pin le/led_reg[10]/G is not reached by a timing clock
 Related violations: <none>
 
 TIMING-20#2 Warning
 Non-clocked latch  
-The latch G/led_reg[5] cannot be properly analyzed as its control pin G/led_reg[5]/G is not reached by a timing clock
+The latch le/led_reg[5] cannot be properly analyzed as its control pin le/led_reg[5]/G is not reached by a timing clock
 Related violations: <none>
 
 LATCH-1#1 Advisory

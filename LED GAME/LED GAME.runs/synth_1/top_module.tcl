@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.runs/synth_1/top_module.tcl"
+  variable script "C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/LED GAME/LED GAME.runs/synth_1/top_module.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,28 +70,26 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 3
-set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.xpr} [current_project]
+set_property webtalk.parent_dir {C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/LED GAME/LED GAME.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/LED GAME/LED GAME.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo {c:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.cache/ip} [current_project]
+set_property ip_output_repo {c:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/LED GAME/LED GAME.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  {C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/Timer.v}
-  {C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/debouncedbutton.v}
-  {C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v}
-  {C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/sources_1/new/top_module.v}
+  {C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/LED GAME/LED GAME.srcs/sources_1/new/Timer.v}
+  {C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/LED GAME/LED GAME.srcs/sources_1/new/debouncedbutton.v}
+  {C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/LED GAME/LED GAME.srcs/sources_1/new/difficulty_game_mode.v}
+  {C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/LED GAME/LED GAME.srcs/sources_1/new/ledcontroller.v}
+  {C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/LED GAME/LED GAME.srcs/sources_1/new/top_module.v}
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -102,12 +100,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/constrs_1/new/Basys3_verilog_led.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/constrs_1/new/Basys3_verilog_led.xdc}}]
+read_xdc {{C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/LED GAME/LED GAME.srcs/constrs_1/new/Basys3_verilog_led.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/LED GAME/LED GAME.srcs/constrs_1/new/Basys3_verilog_led.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental {C:/Users/CPE/Desktop/CPE222/verilog_Led_game/LED GAME/LED GAME.srcs/utils_1/imports/synth_1/top_module.dcp}
+read_checkpoint -auto_incremental -incremental {C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/LED GAME/LED GAME.srcs/utils_1/imports/synth_1/top_module.dcp}
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
