@@ -56,11 +56,12 @@ module Timer(
     initial fourth = 0;
     
     // setting buttons before the game
+//    wire dbbC,dbbU,dbbD;
     wire pressedC,pressedU,pressedD;
-    tff_module tffc (is_start,clock,pressedC);
-    tff_module tffu (btnU,clock,pressedU);
-    tff_module tffd (btnD,clock,pressedD);     
-  
+    tff_module tffC(is_start,clock,pressedC);
+    tff_module tffU(btnU,clock,pressedU);
+    tff_module tffD(btnD,clock,pressedD);
+    
     // is_timeout behavior is 1 when not started, and timeout. 
     always @(posedge elapsed)
     begin

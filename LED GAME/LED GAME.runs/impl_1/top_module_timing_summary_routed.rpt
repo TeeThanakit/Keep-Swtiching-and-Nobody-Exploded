@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Tue Nov 28 23:55:39 2023
+| Date         : Wed Nov 29 14:09:04 2023
 | Host         : woosh running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -report_unconstrained -file top_module_timing_summary_routed.rpt -pb top_module_timing_summary_routed.pb -rpx top_module_timing_summary_routed.rpx -warn_on_violation
 | Design       : top_module
@@ -1699,12 +1699,12 @@ Slack:                    inf
     SLICE_X32Y46         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  T1/first_reg[0]/Q
                          net (fo=14, routed)          1.152     1.608    T1/first[0]
     SLICE_X31Y47         LUT4 (Prop_lut4_I3_O)        0.149     1.757 r  T1/second[2]_i_8/O
-                         net (fo=5, routed)           0.709     2.467    T1/tffu/second_reg[1]_0
-    SLICE_X30Y47         LUT6 (Prop_lut6_I4_O)        0.332     2.799 r  T1/tffu/first[3]_i_11/O
-                         net (fo=4, routed)           1.130     3.928    T1/tffu/first[3]_i_11_n_1
-    SLICE_X31Y46         LUT6 (Prop_lut6_I5_O)        0.124     4.052 r  T1/tffu/first[3]_i_4/O
-                         net (fo=8, routed)           1.293     5.345    T1/tffu/first[3]_i_4_n_1
-    SLICE_X34Y47         LUT6 (Prop_lut6_I4_O)        0.124     5.469 r  T1/tffu/third[1]_i_1/O
+                         net (fo=5, routed)           0.709     2.467    T1/tffU/second_reg[1]_0
+    SLICE_X30Y47         LUT6 (Prop_lut6_I4_O)        0.332     2.799 r  T1/tffU/first[3]_i_11/O
+                         net (fo=4, routed)           1.130     3.928    T1/tffU/first[3]_i_11_n_1
+    SLICE_X31Y46         LUT6 (Prop_lut6_I5_O)        0.124     4.052 r  T1/tffU/first[3]_i_4/O
+                         net (fo=8, routed)           1.293     5.345    T1/tffU/first[3]_i_4_n_1
+    SLICE_X34Y47         LUT6 (Prop_lut6_I4_O)        0.124     5.469 r  T1/tffU/third[1]_i_1/O
                          net (fo=1, routed)           0.000     5.469    T1/third[1]
     SLICE_X34Y47         FDRE                                         r  T1/third_reg[1]/D
   -------------------------------------------------------------------    -------------------
@@ -1724,12 +1724,12 @@ Slack:                    inf
     SLICE_X32Y46         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  T1/first_reg[0]/Q
                          net (fo=14, routed)          1.152     1.608    T1/first[0]
     SLICE_X31Y47         LUT4 (Prop_lut4_I3_O)        0.149     1.757 r  T1/second[2]_i_8/O
-                         net (fo=5, routed)           0.709     2.467    T1/tffu/second_reg[1]_0
-    SLICE_X30Y47         LUT6 (Prop_lut6_I4_O)        0.332     2.799 r  T1/tffu/first[3]_i_11/O
-                         net (fo=4, routed)           1.130     3.928    T1/tffu/first[3]_i_11_n_1
-    SLICE_X31Y46         LUT6 (Prop_lut6_I5_O)        0.124     4.052 r  T1/tffu/first[3]_i_4/O
-                         net (fo=8, routed)           1.173     5.225    T1/tffu/first[3]_i_4_n_1
-    SLICE_X33Y47         LUT6 (Prop_lut6_I0_O)        0.124     5.349 r  T1/tffu/second[0]_i_1/O
+                         net (fo=5, routed)           0.709     2.467    T1/tffU/second_reg[1]_0
+    SLICE_X30Y47         LUT6 (Prop_lut6_I4_O)        0.332     2.799 r  T1/tffU/first[3]_i_11/O
+                         net (fo=4, routed)           1.130     3.928    T1/tffU/first[3]_i_11_n_1
+    SLICE_X31Y46         LUT6 (Prop_lut6_I5_O)        0.124     4.052 r  T1/tffU/first[3]_i_4/O
+                         net (fo=8, routed)           1.173     5.225    T1/tffU/first[3]_i_4_n_1
+    SLICE_X33Y47         LUT6 (Prop_lut6_I0_O)        0.124     5.349 r  T1/tffU/second[0]_i_1/O
                          net (fo=1, routed)           0.000     5.349    T1/second__0[0]
     SLICE_X33Y47         FDRE                                         r  T1/second_reg[0]/D
   -------------------------------------------------------------------    -------------------
@@ -1749,12 +1749,12 @@ Slack:                    inf
     SLICE_X32Y46         FDRE (Prop_fdre_C_Q)         0.456     0.456 f  T1/first_reg[0]/Q
                          net (fo=14, routed)          1.152     1.608    T1/first[0]
     SLICE_X31Y47         LUT4 (Prop_lut4_I3_O)        0.149     1.757 r  T1/second[2]_i_8/O
-                         net (fo=5, routed)           0.709     2.467    T1/tffu/second_reg[1]_0
-    SLICE_X30Y47         LUT6 (Prop_lut6_I4_O)        0.332     2.799 r  T1/tffu/first[3]_i_11/O
-                         net (fo=4, routed)           1.130     3.928    T1/tffu/first[3]_i_11_n_1
-    SLICE_X31Y46         LUT6 (Prop_lut6_I5_O)        0.124     4.052 r  T1/tffu/first[3]_i_4/O
-                         net (fo=8, routed)           1.092     5.144    T1/tffu/first[3]_i_4_n_1
-    SLICE_X34Y47         LUT6 (Prop_lut6_I3_O)        0.124     5.268 r  T1/tffu/third[0]_i_1/O
+                         net (fo=5, routed)           0.709     2.467    T1/tffU/second_reg[1]_0
+    SLICE_X30Y47         LUT6 (Prop_lut6_I4_O)        0.332     2.799 r  T1/tffU/first[3]_i_11/O
+                         net (fo=4, routed)           1.130     3.928    T1/tffU/first[3]_i_11_n_1
+    SLICE_X31Y46         LUT6 (Prop_lut6_I5_O)        0.124     4.052 r  T1/tffU/first[3]_i_4/O
+                         net (fo=8, routed)           1.092     5.144    T1/tffU/first[3]_i_4_n_1
+    SLICE_X34Y47         LUT6 (Prop_lut6_I3_O)        0.124     5.268 r  T1/tffU/third[0]_i_1/O
                          net (fo=1, routed)           0.000     5.268    T1/third[0]
     SLICE_X34Y47         FDRE                                         r  T1/third_reg[0]/D
   -------------------------------------------------------------------    -------------------
@@ -1795,8 +1795,8 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
     SLICE_X32Y46         FDRE                         0.000     0.000 r  T1/first_reg[0]/C
     SLICE_X32Y46         FDRE (Prop_fdre_C_Q)         0.141     0.141 r  T1/first_reg[0]/Q
-                         net (fo=14, routed)          0.173     0.314    T1/tffu/first_reg[2][0]
-    SLICE_X33Y45         LUT6 (Prop_lut6_I2_O)        0.045     0.359 r  T1/tffu/first[1]_i_1/O
+                         net (fo=14, routed)          0.173     0.314    T1/tffU/first_reg[2][0]
+    SLICE_X33Y45         LUT6 (Prop_lut6_I2_O)        0.045     0.359 r  T1/tffU/first[1]_i_1/O
                          net (fo=1, routed)           0.000     0.359    T1/first_0[1]
     SLICE_X33Y45         FDRE                                         r  T1/first_reg[1]/D
   -------------------------------------------------------------------    -------------------
@@ -1901,12 +1901,12 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
     SLICE_X32Y45         FDRE                         0.000     0.000 r  T1/third_reg[3]/C
     SLICE_X32Y45         FDRE (Prop_fdre_C_Q)         0.141     0.141 f  T1/third_reg[3]/Q
-                         net (fo=9, routed)           0.175     0.316    T1/tffd/second[3]_i_2_0[3]
-    SLICE_X31Y46         LUT6 (Prop_lut6_I2_O)        0.045     0.361 r  T1/tffd/first[3]_i_10/O
-                         net (fo=2, routed)           0.060     0.421    T1/tffu/third_reg[3]
-    SLICE_X31Y46         LUT6 (Prop_lut6_I2_O)        0.045     0.466 r  T1/tffu/first[3]_i_4/O
-                         net (fo=8, routed)           0.121     0.587    T1/tffu/first[3]_i_4_n_1
-    SLICE_X32Y45         LUT6 (Prop_lut6_I0_O)        0.045     0.632 r  T1/tffu/third[3]_i_1/O
+                         net (fo=9, routed)           0.175     0.316    T1/tffD/second[3]_i_2_0[3]
+    SLICE_X31Y46         LUT6 (Prop_lut6_I2_O)        0.045     0.361 r  T1/tffD/first[3]_i_10/O
+                         net (fo=2, routed)           0.060     0.421    T1/tffU/third_reg[3]
+    SLICE_X31Y46         LUT6 (Prop_lut6_I2_O)        0.045     0.466 r  T1/tffU/first[3]_i_4/O
+                         net (fo=8, routed)           0.121     0.587    T1/tffU/first[3]_i_4_n_1
+    SLICE_X32Y45         LUT6 (Prop_lut6_I0_O)        0.045     0.632 r  T1/tffU/third[3]_i_1/O
                          net (fo=1, routed)           0.000     0.632    T1/third[3]
     SLICE_X32Y45         FDRE                                         r  T1/third_reg[3]/D
   -------------------------------------------------------------------    -------------------
@@ -1924,12 +1924,12 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
     SLICE_X32Y45         FDRE                         0.000     0.000 r  T1/third_reg[3]/C
     SLICE_X32Y45         FDRE (Prop_fdre_C_Q)         0.141     0.141 f  T1/third_reg[3]/Q
-                         net (fo=9, routed)           0.175     0.316    T1/tffd/second[3]_i_2_0[3]
-    SLICE_X31Y46         LUT6 (Prop_lut6_I2_O)        0.045     0.361 r  T1/tffd/first[3]_i_10/O
-                         net (fo=2, routed)           0.060     0.421    T1/tffu/third_reg[3]
-    SLICE_X31Y46         LUT6 (Prop_lut6_I2_O)        0.045     0.466 r  T1/tffu/first[3]_i_4/O
-                         net (fo=8, routed)           0.122     0.588    T1/tffu/first[3]_i_4_n_1
-    SLICE_X32Y45         LUT6 (Prop_lut6_I3_O)        0.045     0.633 r  T1/tffu/third[2]_i_1/O
+                         net (fo=9, routed)           0.175     0.316    T1/tffD/second[3]_i_2_0[3]
+    SLICE_X31Y46         LUT6 (Prop_lut6_I2_O)        0.045     0.361 r  T1/tffD/first[3]_i_10/O
+                         net (fo=2, routed)           0.060     0.421    T1/tffU/third_reg[3]
+    SLICE_X31Y46         LUT6 (Prop_lut6_I2_O)        0.045     0.466 r  T1/tffU/first[3]_i_4/O
+                         net (fo=8, routed)           0.122     0.588    T1/tffU/first[3]_i_4_n_1
+    SLICE_X32Y45         LUT6 (Prop_lut6_I3_O)        0.045     0.633 r  T1/tffU/third[2]_i_1/O
                          net (fo=1, routed)           0.000     0.633    T1/third[2]
     SLICE_X32Y45         FDRE                                         r  T1/third_reg[2]/D
   -------------------------------------------------------------------    -------------------
@@ -1947,10 +1947,10 @@ Slack:                    inf
   -------------------------------------------------------------------    -------------------
     SLICE_X34Y47         FDRE                         0.000     0.000 r  T1/third_reg[1]/C
     SLICE_X34Y47         FDRE (Prop_fdre_C_Q)         0.164     0.164 r  T1/third_reg[1]/Q
-                         net (fo=10, routed)          0.314     0.478    T1/tffu/Q[1]
-    SLICE_X32Y48         LUT6 (Prop_lut6_I3_O)        0.045     0.523 r  T1/tffu/third[1]_i_3/O
-                         net (fo=1, routed)           0.112     0.635    T1/tffu/third[1]_i_3_n_1
-    SLICE_X34Y47         LUT6 (Prop_lut6_I2_O)        0.045     0.680 r  T1/tffu/third[1]_i_1/O
+                         net (fo=10, routed)          0.314     0.478    T1/tffU/Q[1]
+    SLICE_X32Y48         LUT6 (Prop_lut6_I3_O)        0.045     0.523 r  T1/tffU/third[1]_i_3/O
+                         net (fo=1, routed)           0.112     0.635    T1/tffU/third[1]_i_3_n_1
+    SLICE_X34Y47         LUT6 (Prop_lut6_I2_O)        0.045     0.680 r  T1/tffU/third[1]_i_1/O
                          net (fo=1, routed)           0.000     0.680    T1/third[1]
     SLICE_X34Y47         FDRE                                         r  T1/third_reg[1]/D
   -------------------------------------------------------------------    -------------------
@@ -2350,7 +2350,7 @@ Slack:                    inf
 Min Delay Paths
 --------------------------------------------------------------------------------------
 Slack:                    inf
-  Source:                 T1/tffc/Q_reg/C
+  Source:                 T1/tffC/Q_reg/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            T1/first_reg[1]/D
   Path Group:             (none)
@@ -2372,18 +2372,18 @@ Slack:                    inf
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clock_IBUF_inst/O
                          net (fo=1, routed)           0.631     0.858    clock_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clock_IBUF_BUFG_inst/O
-                         net (fo=81, routed)          0.563     1.446    T1/tffc/clock_IBUF_BUFG
-    SLICE_X31Y45         FDRE                                         r  T1/tffc/Q_reg/C
+                         net (fo=81, routed)          0.563     1.446    T1/tffC/clock_IBUF_BUFG
+    SLICE_X31Y45         FDRE                                         r  T1/tffC/Q_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X31Y45         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  T1/tffc/Q_reg/Q
-                         net (fo=6, routed)           0.304     1.891    T1/tffu/first_reg[1]
-    SLICE_X33Y45         LUT6 (Prop_lut6_I1_O)        0.045     1.936 r  T1/tffu/first[1]_i_1/O
+    SLICE_X31Y45         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  T1/tffC/Q_reg/Q
+                         net (fo=6, routed)           0.304     1.891    T1/tffU/first_reg[1]
+    SLICE_X33Y45         LUT6 (Prop_lut6_I1_O)        0.045     1.936 r  T1/tffU/first[1]_i_1/O
                          net (fo=1, routed)           0.000     1.936    T1/first_0[1]
     SLICE_X33Y45         FDRE                                         r  T1/first_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 T1/tffu/Q_reg/C
+  Source:                 T1/tffU/Q_reg/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            T1/third_reg[3]/D
   Path Group:             (none)
@@ -2405,20 +2405,20 @@ Slack:                    inf
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clock_IBUF_inst/O
                          net (fo=1, routed)           0.631     0.858    clock_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clock_IBUF_BUFG_inst/O
-                         net (fo=81, routed)          0.563     1.446    T1/tffu/clock_IBUF_BUFG
-    SLICE_X31Y46         FDRE                                         r  T1/tffu/Q_reg/C
+                         net (fo=81, routed)          0.563     1.446    T1/tffU/clock_IBUF_BUFG
+    SLICE_X31Y46         FDRE                                         r  T1/tffU/Q_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X31Y46         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  T1/tffu/Q_reg/Q
-                         net (fo=21, routed)          0.214     1.801    T1/tffu/Q_reg_0
-    SLICE_X31Y46         LUT6 (Prop_lut6_I1_O)        0.045     1.846 r  T1/tffu/first[3]_i_4/O
-                         net (fo=8, routed)           0.121     1.967    T1/tffu/first[3]_i_4_n_1
-    SLICE_X32Y45         LUT6 (Prop_lut6_I0_O)        0.045     2.012 r  T1/tffu/third[3]_i_1/O
+    SLICE_X31Y46         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  T1/tffU/Q_reg/Q
+                         net (fo=21, routed)          0.214     1.801    T1/tffU/Q_reg_0
+    SLICE_X31Y46         LUT6 (Prop_lut6_I1_O)        0.045     1.846 r  T1/tffU/first[3]_i_4/O
+                         net (fo=8, routed)           0.121     1.967    T1/tffU/first[3]_i_4_n_1
+    SLICE_X32Y45         LUT6 (Prop_lut6_I0_O)        0.045     2.012 r  T1/tffU/third[3]_i_1/O
                          net (fo=1, routed)           0.000     2.012    T1/third[3]
     SLICE_X32Y45         FDRE                                         r  T1/third_reg[3]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 T1/tffu/Q_reg/C
+  Source:                 T1/tffU/Q_reg/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            T1/third_reg[2]/D
   Path Group:             (none)
@@ -2440,20 +2440,20 @@ Slack:                    inf
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clock_IBUF_inst/O
                          net (fo=1, routed)           0.631     0.858    clock_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clock_IBUF_BUFG_inst/O
-                         net (fo=81, routed)          0.563     1.446    T1/tffu/clock_IBUF_BUFG
-    SLICE_X31Y46         FDRE                                         r  T1/tffu/Q_reg/C
+                         net (fo=81, routed)          0.563     1.446    T1/tffU/clock_IBUF_BUFG
+    SLICE_X31Y46         FDRE                                         r  T1/tffU/Q_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X31Y46         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  T1/tffu/Q_reg/Q
-                         net (fo=21, routed)          0.214     1.801    T1/tffu/Q_reg_0
-    SLICE_X31Y46         LUT6 (Prop_lut6_I1_O)        0.045     1.846 r  T1/tffu/first[3]_i_4/O
-                         net (fo=8, routed)           0.122     1.968    T1/tffu/first[3]_i_4_n_1
-    SLICE_X32Y45         LUT6 (Prop_lut6_I3_O)        0.045     2.013 r  T1/tffu/third[2]_i_1/O
+    SLICE_X31Y46         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  T1/tffU/Q_reg/Q
+                         net (fo=21, routed)          0.214     1.801    T1/tffU/Q_reg_0
+    SLICE_X31Y46         LUT6 (Prop_lut6_I1_O)        0.045     1.846 r  T1/tffU/first[3]_i_4/O
+                         net (fo=8, routed)           0.122     1.968    T1/tffU/first[3]_i_4_n_1
+    SLICE_X32Y45         LUT6 (Prop_lut6_I3_O)        0.045     2.013 r  T1/tffU/third[2]_i_1/O
                          net (fo=1, routed)           0.000     2.013    T1/third[2]
     SLICE_X32Y45         FDRE                                         r  T1/third_reg[2]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 T1/tffu/Q_reg/C
+  Source:                 T1/tffU/Q_reg/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            T1/first_reg[0]/D
   Path Group:             (none)
@@ -2475,20 +2475,20 @@ Slack:                    inf
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clock_IBUF_inst/O
                          net (fo=1, routed)           0.631     0.858    clock_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clock_IBUF_BUFG_inst/O
-                         net (fo=81, routed)          0.563     1.446    T1/tffu/clock_IBUF_BUFG
-    SLICE_X31Y46         FDRE                                         r  T1/tffu/Q_reg/C
+                         net (fo=81, routed)          0.563     1.446    T1/tffU/clock_IBUF_BUFG
+    SLICE_X31Y46         FDRE                                         r  T1/tffU/Q_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X31Y46         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  T1/tffu/Q_reg/Q
-                         net (fo=21, routed)          0.204     1.791    T1/tffc/first_reg[0]_0
-    SLICE_X31Y45         LUT4 (Prop_lut4_I2_O)        0.048     1.839 f  T1/tffc/first[0]_i_2/O
-                         net (fo=1, routed)           0.147     1.985    T1/tffu/first_reg[0]
-    SLICE_X32Y46         LUT6 (Prop_lut6_I5_O)        0.107     2.092 r  T1/tffu/first[0]_i_1/O
+    SLICE_X31Y46         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  T1/tffU/Q_reg/Q
+                         net (fo=21, routed)          0.204     1.791    T1/tffC/first_reg[0]_0
+    SLICE_X31Y45         LUT4 (Prop_lut4_I2_O)        0.048     1.839 f  T1/tffC/first[0]_i_2/O
+                         net (fo=1, routed)           0.147     1.985    T1/tffU/first_reg[0]
+    SLICE_X32Y46         LUT6 (Prop_lut6_I5_O)        0.107     2.092 r  T1/tffU/first[0]_i_1/O
                          net (fo=1, routed)           0.000     2.092    T1/first_0[0]
     SLICE_X32Y46         FDRE                                         r  T1/first_reg[0]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 T1/tffu/Q_reg/C
+  Source:                 T1/tffU/Q_reg/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            T1/first_reg[3]/D
   Path Group:             (none)
@@ -2510,20 +2510,20 @@ Slack:                    inf
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clock_IBUF_inst/O
                          net (fo=1, routed)           0.631     0.858    clock_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clock_IBUF_BUFG_inst/O
-                         net (fo=81, routed)          0.563     1.446    T1/tffu/clock_IBUF_BUFG
-    SLICE_X31Y46         FDRE                                         r  T1/tffu/Q_reg/C
+                         net (fo=81, routed)          0.563     1.446    T1/tffU/clock_IBUF_BUFG
+    SLICE_X31Y46         FDRE                                         r  T1/tffU/Q_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X31Y46         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  T1/tffu/Q_reg/Q
-                         net (fo=21, routed)          0.214     1.801    T1/tffu/Q_reg_0
-    SLICE_X31Y46         LUT6 (Prop_lut6_I1_O)        0.045     1.846 r  T1/tffu/first[3]_i_4/O
-                         net (fo=8, routed)           0.204     2.050    T1/tffu/first[3]_i_4_n_1
-    SLICE_X32Y46         LUT6 (Prop_lut6_I2_O)        0.045     2.095 r  T1/tffu/first[3]_i_1/O
+    SLICE_X31Y46         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  T1/tffU/Q_reg/Q
+                         net (fo=21, routed)          0.214     1.801    T1/tffU/Q_reg_0
+    SLICE_X31Y46         LUT6 (Prop_lut6_I1_O)        0.045     1.846 r  T1/tffU/first[3]_i_4/O
+                         net (fo=8, routed)           0.204     2.050    T1/tffU/first[3]_i_4_n_1
+    SLICE_X32Y46         LUT6 (Prop_lut6_I2_O)        0.045     2.095 r  T1/tffU/first[3]_i_1/O
                          net (fo=1, routed)           0.000     2.095    T1/first_0[3]
     SLICE_X32Y46         FDRE                                         r  T1/first_reg[3]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 T1/tffu/Q_reg/C
+  Source:                 T1/tffU/Q_reg/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            T1/second_reg[3]/D
   Path Group:             (none)
@@ -2545,20 +2545,20 @@ Slack:                    inf
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clock_IBUF_inst/O
                          net (fo=1, routed)           0.631     0.858    clock_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clock_IBUF_BUFG_inst/O
-                         net (fo=81, routed)          0.563     1.446    T1/tffu/clock_IBUF_BUFG
-    SLICE_X31Y46         FDRE                                         r  T1/tffu/Q_reg/C
+                         net (fo=81, routed)          0.563     1.446    T1/tffU/clock_IBUF_BUFG
+    SLICE_X31Y46         FDRE                                         r  T1/tffU/Q_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X31Y46         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  T1/tffu/Q_reg/Q
-                         net (fo=21, routed)          0.269     1.856    T1/tffu/Q_reg_0
-    SLICE_X33Y46         LUT4 (Prop_lut4_I0_O)        0.045     1.901 r  T1/tffu/second[3]_i_2/O
-                         net (fo=5, routed)           0.184     2.085    T1/tffu/second[3]_i_2_n_1
-    SLICE_X32Y46         LUT6 (Prop_lut6_I3_O)        0.045     2.130 r  T1/tffu/second[3]_i_1/O
+    SLICE_X31Y46         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  T1/tffU/Q_reg/Q
+                         net (fo=21, routed)          0.269     1.856    T1/tffU/Q_reg_0
+    SLICE_X33Y46         LUT4 (Prop_lut4_I0_O)        0.045     1.901 r  T1/tffU/second[3]_i_2/O
+                         net (fo=5, routed)           0.184     2.085    T1/tffU/second[3]_i_2_n_1
+    SLICE_X32Y46         LUT6 (Prop_lut6_I3_O)        0.045     2.130 r  T1/tffU/second[3]_i_1/O
                          net (fo=1, routed)           0.000     2.130    T1/second__0[3]
     SLICE_X32Y46         FDRE                                         r  T1/second_reg[3]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 T1/tffu/Q_reg/C
+  Source:                 T1/tffU/Q_reg/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            T1/second_reg[0]/D
   Path Group:             (none)
@@ -2580,20 +2580,20 @@ Slack:                    inf
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clock_IBUF_inst/O
                          net (fo=1, routed)           0.631     0.858    clock_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clock_IBUF_BUFG_inst/O
-                         net (fo=81, routed)          0.563     1.446    T1/tffu/clock_IBUF_BUFG
-    SLICE_X31Y46         FDRE                                         r  T1/tffu/Q_reg/C
+                         net (fo=81, routed)          0.563     1.446    T1/tffU/clock_IBUF_BUFG
+    SLICE_X31Y46         FDRE                                         r  T1/tffU/Q_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X31Y46         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  T1/tffu/Q_reg/Q
-                         net (fo=21, routed)          0.347     1.935    T1/tffd/second_reg[0]_0
-    SLICE_X30Y46         LUT6 (Prop_lut6_I5_O)        0.045     1.980 r  T1/tffd/second[2]_i_4/O
-                         net (fo=6, routed)           0.106     2.086    T1/tffu/second_reg[0]
-    SLICE_X33Y47         LUT6 (Prop_lut6_I5_O)        0.045     2.131 r  T1/tffu/second[0]_i_1/O
+    SLICE_X31Y46         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  T1/tffU/Q_reg/Q
+                         net (fo=21, routed)          0.347     1.935    T1/tffD/second_reg[0]_0
+    SLICE_X30Y46         LUT6 (Prop_lut6_I5_O)        0.045     1.980 r  T1/tffD/second[2]_i_4/O
+                         net (fo=6, routed)           0.106     2.086    T1/tffU/second_reg[0]
+    SLICE_X33Y47         LUT6 (Prop_lut6_I5_O)        0.045     2.131 r  T1/tffU/second[0]_i_1/O
                          net (fo=1, routed)           0.000     2.131    T1/second__0[0]
     SLICE_X33Y47         FDRE                                         r  T1/second_reg[0]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 T1/tffu/Q_reg/C
+  Source:                 T1/tffU/Q_reg/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            T1/second_reg[1]/D
   Path Group:             (none)
@@ -2615,20 +2615,20 @@ Slack:                    inf
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clock_IBUF_inst/O
                          net (fo=1, routed)           0.631     0.858    clock_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clock_IBUF_BUFG_inst/O
-                         net (fo=81, routed)          0.563     1.446    T1/tffu/clock_IBUF_BUFG
-    SLICE_X31Y46         FDRE                                         r  T1/tffu/Q_reg/C
+                         net (fo=81, routed)          0.563     1.446    T1/tffU/clock_IBUF_BUFG
+    SLICE_X31Y46         FDRE                                         r  T1/tffU/Q_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X31Y46         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  T1/tffu/Q_reg/Q
-                         net (fo=21, routed)          0.286     1.873    T1/tffu/Q_reg_0
-    SLICE_X33Y47         LUT6 (Prop_lut6_I2_O)        0.045     1.918 r  T1/tffu/second[2]_i_3/O
-                         net (fo=5, routed)           0.210     2.128    T1/tffu/second[2]_i_3_n_1
-    SLICE_X33Y46         LUT5 (Prop_lut5_I4_O)        0.045     2.173 r  T1/tffu/second[1]_i_1/O
+    SLICE_X31Y46         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  T1/tffU/Q_reg/Q
+                         net (fo=21, routed)          0.286     1.873    T1/tffU/Q_reg_0
+    SLICE_X33Y47         LUT6 (Prop_lut6_I2_O)        0.045     1.918 r  T1/tffU/second[2]_i_3/O
+                         net (fo=5, routed)           0.210     2.128    T1/tffU/second[2]_i_3_n_1
+    SLICE_X33Y46         LUT5 (Prop_lut5_I4_O)        0.045     2.173 r  T1/tffU/second[1]_i_1/O
                          net (fo=1, routed)           0.000     2.173    T1/second__0[1]
     SLICE_X33Y46         FDRE                                         r  T1/second_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 T1/tffu/Q_reg/C
+  Source:                 T1/tffU/Q_reg/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            T1/second_reg[2]/D
   Path Group:             (none)
@@ -2650,20 +2650,20 @@ Slack:                    inf
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clock_IBUF_inst/O
                          net (fo=1, routed)           0.631     0.858    clock_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clock_IBUF_BUFG_inst/O
-                         net (fo=81, routed)          0.563     1.446    T1/tffu/clock_IBUF_BUFG
-    SLICE_X31Y46         FDRE                                         r  T1/tffu/Q_reg/C
+                         net (fo=81, routed)          0.563     1.446    T1/tffU/clock_IBUF_BUFG
+    SLICE_X31Y46         FDRE                                         r  T1/tffU/Q_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X31Y46         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  T1/tffu/Q_reg/Q
-                         net (fo=21, routed)          0.286     1.873    T1/tffu/Q_reg_0
-    SLICE_X33Y47         LUT6 (Prop_lut6_I2_O)        0.045     1.918 r  T1/tffu/second[2]_i_3/O
-                         net (fo=5, routed)           0.210     2.128    T1/tffu/second[2]_i_3_n_1
-    SLICE_X33Y46         LUT5 (Prop_lut5_I2_O)        0.048     2.176 r  T1/tffu/second[2]_i_1/O
+    SLICE_X31Y46         FDRE (Prop_fdre_C_Q)         0.141     1.587 r  T1/tffU/Q_reg/Q
+                         net (fo=21, routed)          0.286     1.873    T1/tffU/Q_reg_0
+    SLICE_X33Y47         LUT6 (Prop_lut6_I2_O)        0.045     1.918 r  T1/tffU/second[2]_i_3/O
+                         net (fo=5, routed)           0.210     2.128    T1/tffU/second[2]_i_3_n_1
+    SLICE_X33Y46         LUT5 (Prop_lut5_I2_O)        0.048     2.176 r  T1/tffU/second[2]_i_1/O
                          net (fo=1, routed)           0.000     2.176    T1/second__0[2]
     SLICE_X33Y46         FDRE                                         r  T1/second_reg[2]/D
   -------------------------------------------------------------------    -------------------
 
 Slack:                    inf
-  Source:                 T1/tffc/Q_reg/C
+  Source:                 T1/tffC/Q_reg/C
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            T1/first_reg[2]/D
   Path Group:             (none)
@@ -2685,14 +2685,14 @@ Slack:                    inf
     W5                   IBUF (Prop_ibuf_I_O)         0.226     0.226 r  clock_IBUF_inst/O
                          net (fo=1, routed)           0.631     0.858    clock_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.884 r  clock_IBUF_BUFG_inst/O
-                         net (fo=81, routed)          0.563     1.446    T1/tffc/clock_IBUF_BUFG
-    SLICE_X31Y45         FDRE                                         r  T1/tffc/Q_reg/C
+                         net (fo=81, routed)          0.563     1.446    T1/tffC/clock_IBUF_BUFG
+    SLICE_X31Y45         FDRE                                         r  T1/tffC/Q_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X31Y45         FDRE (Prop_fdre_C_Q)         0.141     1.587 f  T1/tffc/Q_reg/Q
-                         net (fo=6, routed)           0.137     1.724    T1/tffu/first_reg[1]
-    SLICE_X33Y45         LUT5 (Prop_lut5_I1_O)        0.045     1.769 r  T1/tffu/first[2]_i_3/O
-                         net (fo=1, routed)           0.220     1.989    T1/tffu/first[2]_i_3_n_1
-    SLICE_X33Y45         LUT3 (Prop_lut3_I1_O)        0.045     2.034 r  T1/tffu/first[2]_i_1/O
+    SLICE_X31Y45         FDRE (Prop_fdre_C_Q)         0.141     1.587 f  T1/tffC/Q_reg/Q
+                         net (fo=6, routed)           0.137     1.724    T1/tffU/first_reg[1]
+    SLICE_X33Y45         LUT5 (Prop_lut5_I1_O)        0.045     1.769 r  T1/tffU/first[2]_i_3/O
+                         net (fo=1, routed)           0.220     1.989    T1/tffU/first[2]_i_3_n_1
+    SLICE_X33Y45         LUT3 (Prop_lut3_I1_O)        0.045     2.034 r  T1/tffU/first[2]_i_1/O
                          net (fo=1, routed)           0.149     2.183    T1/first_0[2]
     SLICE_X33Y45         FDRE                                         r  T1/first_reg[2]/D
   -------------------------------------------------------------------    -------------------
@@ -2716,7 +2716,7 @@ Max Delay Paths
 Slack:                    inf
   Source:                 btnD
                             (input port)
-  Destination:            T1/tffd/Q_reg/D
+  Destination:            T1/tffD/Q_reg/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             (none)
   Path Type:              Setup (Max at Slow Process Corner)
@@ -2737,10 +2737,10 @@ Slack:                    inf
     U17                                               0.000     0.000 r  btnD (IN)
                          net (fo=0)                   0.000     0.000    btnD
     U17                  IBUF (Prop_ibuf_I_O)         1.452     1.452 r  btnD_IBUF_inst/O
-                         net (fo=1, routed)           3.130     4.582    T1/tffd/btnD_IBUF
-    SLICE_X31Y45         LUT2 (Prop_lut2_I0_O)        0.124     4.706 r  T1/tffd/Q_i_1__1/O
-                         net (fo=1, routed)           0.000     4.706    T1/tffd/Q_i_1__1_n_1
-    SLICE_X31Y45         FDRE                                         r  T1/tffd/Q_reg/D
+                         net (fo=1, routed)           3.130     4.582    T1/tffD/btnD_IBUF
+    SLICE_X31Y45         LUT2 (Prop_lut2_I0_O)        0.124     4.706 r  T1/tffD/Q_i_1__1/O
+                         net (fo=1, routed)           0.000     4.706    T1/tffD/Q_i_1__1_n_1
+    SLICE_X31Y45         FDRE                                         r  T1/tffD/Q_reg/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -2750,13 +2750,13 @@ Slack:                    inf
     W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  clock_IBUF_inst/O
                          net (fo=1, routed)           1.862     3.250    clock_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     3.341 r  clock_IBUF_BUFG_inst/O
-                         net (fo=81, routed)          1.445     4.786    T1/tffd/clock_IBUF_BUFG
-    SLICE_X31Y45         FDRE                                         r  T1/tffd/Q_reg/C
+                         net (fo=81, routed)          1.445     4.786    T1/tffD/clock_IBUF_BUFG
+    SLICE_X31Y45         FDRE                                         r  T1/tffD/Q_reg/C
 
 Slack:                    inf
   Source:                 btnC
                             (input port)
-  Destination:            T1/tffc/Q_reg/D
+  Destination:            T1/tffC/Q_reg/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             (none)
   Path Type:              Setup (Max at Slow Process Corner)
@@ -2777,10 +2777,10 @@ Slack:                    inf
     U18                                               0.000     0.000 r  btnC (IN)
                          net (fo=0)                   0.000     0.000    btnC
     U18                  IBUF (Prop_ibuf_I_O)         1.441     1.441 r  btnC_IBUF_inst/O
-                         net (fo=1, routed)           3.139     4.580    T1/tffc/btnC_IBUF
-    SLICE_X31Y45         LUT2 (Prop_lut2_I0_O)        0.124     4.704 r  T1/tffc/Q_i_1/O
-                         net (fo=1, routed)           0.000     4.704    T1/tffc/Q_i_1_n_1
-    SLICE_X31Y45         FDRE                                         r  T1/tffc/Q_reg/D
+                         net (fo=1, routed)           3.139     4.580    T1/tffC/btnC_IBUF
+    SLICE_X31Y45         LUT2 (Prop_lut2_I0_O)        0.124     4.704 r  T1/tffC/Q_i_1/O
+                         net (fo=1, routed)           0.000     4.704    T1/tffC/Q_i_1_n_1
+    SLICE_X31Y45         FDRE                                         r  T1/tffC/Q_reg/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -2790,13 +2790,13 @@ Slack:                    inf
     W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  clock_IBUF_inst/O
                          net (fo=1, routed)           1.862     3.250    clock_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     3.341 r  clock_IBUF_BUFG_inst/O
-                         net (fo=81, routed)          1.445     4.786    T1/tffc/clock_IBUF_BUFG
-    SLICE_X31Y45         FDRE                                         r  T1/tffc/Q_reg/C
+                         net (fo=81, routed)          1.445     4.786    T1/tffC/clock_IBUF_BUFG
+    SLICE_X31Y45         FDRE                                         r  T1/tffC/Q_reg/C
 
 Slack:                    inf
   Source:                 btnU
                             (input port)
-  Destination:            T1/tffu/Q_reg/D
+  Destination:            T1/tffU/Q_reg/D
                             (rising edge-triggered cell FDRE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             (none)
   Path Type:              Setup (Max at Slow Process Corner)
@@ -2817,10 +2817,10 @@ Slack:                    inf
     T18                                               0.000     0.000 r  btnU (IN)
                          net (fo=0)                   0.000     0.000    btnU
     T18                  IBUF (Prop_ibuf_I_O)         1.454     1.454 r  btnU_IBUF_inst/O
-                         net (fo=1, routed)           2.816     4.270    T1/tffu/btnU_IBUF
-    SLICE_X31Y46         LUT2 (Prop_lut2_I0_O)        0.124     4.394 r  T1/tffu/Q_i_1__0/O
-                         net (fo=1, routed)           0.000     4.394    T1/tffu/Q_i_1__0_n_1
-    SLICE_X31Y46         FDRE                                         r  T1/tffu/Q_reg/D
+                         net (fo=1, routed)           2.816     4.270    T1/tffU/btnU_IBUF
+    SLICE_X31Y46         LUT2 (Prop_lut2_I0_O)        0.124     4.394 r  T1/tffU/Q_i_1__0/O
+                         net (fo=1, routed)           0.000     4.394    T1/tffU/Q_i_1__0_n_1
+    SLICE_X31Y46         FDRE                                         r  T1/tffU/Q_reg/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -2830,8 +2830,8 @@ Slack:                    inf
     W5                   IBUF (Prop_ibuf_I_O)         1.388     1.388 r  clock_IBUF_inst/O
                          net (fo=1, routed)           1.862     3.250    clock_IBUF
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     3.341 r  clock_IBUF_BUFG_inst/O
-                         net (fo=81, routed)          1.445     4.786    T1/tffu/clock_IBUF_BUFG
-    SLICE_X31Y46         FDRE                                         r  T1/tffu/Q_reg/C
+                         net (fo=81, routed)          1.445     4.786    T1/tffU/clock_IBUF_BUFG
+    SLICE_X31Y46         FDRE                                         r  T1/tffU/Q_reg/C
 
 Slack:                    inf
   Source:                 G/dbbl/d1/Q_reg/C
