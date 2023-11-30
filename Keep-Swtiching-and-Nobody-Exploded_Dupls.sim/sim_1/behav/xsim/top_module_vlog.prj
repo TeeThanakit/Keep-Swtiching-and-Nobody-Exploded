@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/debounced.v" \
+"../../../../Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/game_mode.v" \
+"../../../../Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/led_set.v" \
+"../../../../Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/timer.v" \
+"../../../../Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/top_module.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
