@@ -19,7 +19,6 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 module difficulty_game_mode(
-  input btnC,
   input btnL,
   input btnR,
   input clock,  // Add clock input

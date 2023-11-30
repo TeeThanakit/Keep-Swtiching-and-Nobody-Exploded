@@ -26,58 +26,21 @@ module ledcontroller(
     );
     
     always @* begin
+      if(is_timeout==1'b1)  begin
       case (current_mode)
         2'b01: begin
-          led[15] = 1'b1;
-            led[14] = 1'b1;
-            led[13] = 1'b1;
-            led[12] = 1'b1;
-            led[11] = 1'b1;
-            led[10] = 1'b0;
-            led[9] = 1'b0;
-            led[8] = 1'b0;
-            led[7] = 1'b0;
-            led[6] = 1'b0;
-            led[5] = 1'b0;
-            led[4] = 1'b0;
-            led[3] = 1'b0;
-            led[2] = 1'b0;
-            led[1] = 1'b0;
+          led=16'b1111100000000000;
         end
         2'b10: begin
-          led[15] = 1'b1;
-            led[14] = 1'b1;
-            led[13] = 1'b1;
-            led[12] = 1'b1;
-            led[11] = 1'b1;
-            led[10] = 1'b1;
-            led[9] = 1'b1;
-            led[8] = 1'b1;
-            led[7] = 1'b1;
-            led[6] = 1'b1;
-            led[5] = 1'b0;
-            led[4] = 1'b0;
-            led[3] = 1'b0;
-            led[2] = 1'b0;
-            led[1] = 1'b0;    
+          led=16'b1111111111000000; 
         end
         2'b11: begin
-           led[15] = 1'b1;
-            led[14] = 1'b1;
-            led[13] = 1'b1;
-            led[12] = 1'b1;
-            led[11] = 1'b1;
-            led[10] = 1'b1;
-            led[9] = 1'b1;
-            led[8] = 1'b1;
-            led[7] = 1'b1;
-            led[6] = 1'b1;
-            led[5] = 1'b1;
-            led[4] = 1'b1;
-            led[3] = 1'b1;
-            led[2] = 1'b1;
-            led[1] = 1'b1;
+          led=16'b1111111111111111;
         end
       endcase 
+    end
+    else if(is_timeout==1'b0) begin
+      led=16'b1010101010101010;
+    end
     end 
 endmodule
