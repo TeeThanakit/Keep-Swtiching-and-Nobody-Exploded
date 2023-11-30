@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../LED GAME.srcs/sources_1/new/Timer.v" \
+"../../../../LED GAME.srcs/sources_1/new/debouncedbutton.v" \
+"../../../../LED GAME.srcs/sources_1/new/difficulty_game_mode.v" \
+"../../../../LED GAME.srcs/sources_1/new/ledcontroller.v" \
+"../../../../LED GAME.srcs/sources_1/new/top_module.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
