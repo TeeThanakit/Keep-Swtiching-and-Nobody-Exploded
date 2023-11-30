@@ -27,7 +27,7 @@ module difficulty_game_mode(
 );  
 
   initial current_mode = 2'b01;
-  always @(posedge clock) begin
+  always @(posedge btnL or posedge btnR) begin
     if (btnL) begin
       case (current_mode)
         2'b01: current_mode <= 2'b11;

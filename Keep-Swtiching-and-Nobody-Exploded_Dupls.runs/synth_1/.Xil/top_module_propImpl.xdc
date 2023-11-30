@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/constrs_1/new/const_ksane.xdc rfile:../../../Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/constrs_1/new/const_ksane.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/constrs_1/new/const_ksane.xdc rfile:../../../Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/constrs_1/new/const_ksane.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports clock]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]

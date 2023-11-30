@@ -3,17 +3,17 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Thu Nov 30 17:29:27 2023
-# Process ID: 22356
-# Current directory: C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.runs/synth_1
+# Start of session at: Thu Nov 30 23:33:55 2023
+# Process ID: 23104
+# Current directory: C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.runs/synth_1
 # Command line: vivado.exe -log top_module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_module.tcl
-# Log file: C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.runs/synth_1/top_module.vds
-# Journal file: C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.runs/synth_1\vivado.jou
-# Running On: DESKTOP-LFUI70J, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 10, Host memory: 16847 MB
+# Log file: C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.runs/synth_1/top_module.vds
+# Journal file: C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.runs/synth_1\vivado.jou
+# Running On: DESKTOP-UERN9I1, OS: Windows, CPU Frequency: 3394 MHz, CPU Physical cores: 16, Host memory: 17035 MB
 #-----------------------------------------------------------
 source top_module.tcl -notrace
-Command: read_checkpoint -auto_incremental -incremental C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/utils_1/imports/synth_1/top_module.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/utils_1/imports/synth_1/top_module.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/utils_1/imports/synth_1/top_module.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/utils_1/imports/synth_1/top_module.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top top_module -part xc7a35tcpg236-1
 Starting synth_design
@@ -24,38 +24,38 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1080
+INFO: [Synth 8-7075] Helper process launched with PID 30572
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1308.789 ; gain = 439.875
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1321.730 ; gain = 442.352
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-11241] undeclared symbol 'pressedC', assumed default net type 'wire' [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/top_module.v:34]
-INFO: [Synth 8-11241] undeclared symbol 'pressedU', assumed default net type 'wire' [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/top_module.v:35]
-INFO: [Synth 8-11241] undeclared symbol 'pressedD', assumed default net type 'wire' [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/top_module.v:36]
-INFO: [Synth 8-6157] synthesizing module 'top_module' [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/top_module.v:20]
-INFO: [Synth 8-6157] synthesizing module 'debouncedbutton' [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/debounced.v:22]
-INFO: [Synth 8-6157] synthesizing module 'clock_div' [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/debounced.v:34]
-INFO: [Synth 8-6155] done synthesizing module 'clock_div' (0#1) [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/debounced.v:34]
-INFO: [Synth 8-6157] synthesizing module 'my_dff' [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/debounced.v:43]
-INFO: [Synth 8-6155] done synthesizing module 'my_dff' (0#1) [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/debounced.v:43]
-INFO: [Synth 8-6155] done synthesizing module 'debouncedbutton' (0#1) [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/debounced.v:22]
-INFO: [Synth 8-6157] synthesizing module 'Timer' [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/timer.v:11]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/timer.v:146]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/timer.v:154]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/timer.v:191]
-WARNING: [Synth 8-567] referenced signal 'fourth' should be on the sensitivity list [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/timer.v:190]
-WARNING: [Synth 8-567] referenced signal 'third' should be on the sensitivity list [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/timer.v:190]
-WARNING: [Synth 8-567] referenced signal 'second' should be on the sensitivity list [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/timer.v:190]
-WARNING: [Synth 8-567] referenced signal 'first' should be on the sensitivity list [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/timer.v:190]
-WARNING: [Synth 8-567] referenced signal 'num' should be on the sensitivity list [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/timer.v:198]
-INFO: [Synth 8-6155] done synthesizing module 'Timer' (0#1) [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/timer.v:11]
-INFO: [Synth 8-6157] synthesizing module 'difficulty_game_mode' [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/game_mode.v:21]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/game_mode.v:32]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/game_mode.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'difficulty_game_mode' (0#1) [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/game_mode.v:21]
-INFO: [Synth 8-6157] synthesizing module 'ledcontroller' [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/led_set.v:21]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/led_set.v:30]
-INFO: [Synth 8-6155] done synthesizing module 'ledcontroller' (0#1) [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/led_set.v:21]
-INFO: [Synth 8-6155] done synthesizing module 'top_module' (0#1) [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/top_module.v:20]
+INFO: [Synth 8-11241] undeclared symbol 'pressedC', assumed default net type 'wire' [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/top_module.v:34]
+INFO: [Synth 8-11241] undeclared symbol 'pressedU', assumed default net type 'wire' [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/top_module.v:35]
+INFO: [Synth 8-11241] undeclared symbol 'pressedD', assumed default net type 'wire' [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/top_module.v:36]
+INFO: [Synth 8-6157] synthesizing module 'top_module' [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/top_module.v:20]
+INFO: [Synth 8-6157] synthesizing module 'debouncedbutton' [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/debounced.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clock_div' [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/debounced.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'clock_div' (0#1) [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/debounced.v:34]
+INFO: [Synth 8-6157] synthesizing module 'my_dff' [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/debounced.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'my_dff' (0#1) [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/debounced.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'debouncedbutton' (0#1) [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/debounced.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Timer' [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/timer.v:11]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/timer.v:146]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/timer.v:154]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/timer.v:191]
+WARNING: [Synth 8-567] referenced signal 'fourth' should be on the sensitivity list [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/timer.v:190]
+WARNING: [Synth 8-567] referenced signal 'third' should be on the sensitivity list [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/timer.v:190]
+WARNING: [Synth 8-567] referenced signal 'second' should be on the sensitivity list [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/timer.v:190]
+WARNING: [Synth 8-567] referenced signal 'first' should be on the sensitivity list [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/timer.v:190]
+WARNING: [Synth 8-567] referenced signal 'num' should be on the sensitivity list [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/timer.v:198]
+INFO: [Synth 8-6155] done synthesizing module 'Timer' (0#1) [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/timer.v:11]
+INFO: [Synth 8-6157] synthesizing module 'difficulty_game_mode' [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/game_mode.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/game_mode.v:32]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/game_mode.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'difficulty_game_mode' (0#1) [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/game_mode.v:21]
+INFO: [Synth 8-6157] synthesizing module 'ledcontroller' [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/led_set.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/led_set.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'ledcontroller' (0#1) [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/led_set.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'top_module' (0#1) [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/top_module.v:20]
 WARNING: [Synth 8-7129] Port clock in module ledcontroller is either unconnected or has no load
 WARNING: [Synth 8-7129] Port sw[15] in module difficulty_game_mode is either unconnected or has no load
 WARNING: [Synth 8-7129] Port sw[14] in module difficulty_game_mode is either unconnected or has no load
@@ -74,55 +74,55 @@ WARNING: [Synth 8-7129] Port sw[2] in module difficulty_game_mode is either unco
 WARNING: [Synth 8-7129] Port sw[1] in module difficulty_game_mode is either unconnected or has no load
 WARNING: [Synth 8-7129] Port sw[0] in module difficulty_game_mode is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1417.004 ; gain = 548.090
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1429.102 ; gain = 549.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1417.004 ; gain = 548.090
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1429.102 ; gain = 549.723
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1417.004 ; gain = 548.090
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1429.102 ; gain = 549.723
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1417.004 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1429.102 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/constrs_1/new/const_ksane.xdc]
-Finished Parsing XDC File [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/constrs_1/new/const_ksane.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/constrs_1/new/const_ksane.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_propImpl.xdc].
+Parsing XDC File [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/constrs_1/new/const_ksane.xdc]
+Finished Parsing XDC File [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/constrs_1/new/const_ksane.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/constrs_1/new/const_ksane.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_module_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1516.465 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1540.211 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1516.465 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1540.211 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1516.465 ; gain = 647.551
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1540.211 ; gain = 660.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1516.465 ; gain = 647.551
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1540.211 ; gain = 660.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1516.465 ; gain = 647.551
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1540.211 ; gain = 660.832
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-327] inferring latch for variable 'num_reg' [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/timer.v:192]
-WARNING: [Synth 8-327] inferring latch for variable 'led_reg' [C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/led_set.v:32]
+WARNING: [Synth 8-327] inferring latch for variable 'num_reg' [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/timer.v:192]
+WARNING: [Synth 8-327] inferring latch for variable 'led_reg' [C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/sources_1/new/led_set.v:32]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1516.465 ; gain = 647.551
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1540.211 ; gain = 660.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -184,25 +184,25 @@ WARNING: [Synth 8-3332] Sequential element (T1/num_reg[1]) is unused and will be
 WARNING: [Synth 8-3332] Sequential element (T1/num_reg[0]) is unused and will be removed from module top_module.
 WARNING: [Synth 8-3332] Sequential element (LC1/led_reg[15]) is unused and will be removed from module top_module.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 1516.465 ; gain = 647.551
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1540.211 ; gain = 660.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1516.465 ; gain = 647.551
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1540.211 ; gain = 660.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 1516.465 ; gain = 647.551
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1540.211 ; gain = 660.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 1516.465 ; gain = 647.551
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1540.211 ; gain = 660.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -220,37 +220,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 1516.465 ; gain = 647.551
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1540.211 ; gain = 660.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 1516.465 ; gain = 647.551
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1540.211 ; gain = 660.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 1516.465 ; gain = 647.551
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1540.211 ; gain = 660.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 1516.465 ; gain = 647.551
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1540.211 ; gain = 660.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 1516.465 ; gain = 647.551
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1540.211 ; gain = 660.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 1516.465 ; gain = 647.551
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1540.211 ; gain = 660.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -282,18 +282,18 @@ Report Cell Usage:
 |14    |OBUF   |    27|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 1516.465 ; gain = 647.551
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1540.211 ; gain = 660.832
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:20 . Memory (MB): peak = 1516.465 ; gain = 548.090
-Synthesis Optimization Complete : Time (s): cpu = 00:00:03 ; elapsed = 00:00:22 . Memory (MB): peak = 1516.465 ; gain = 647.551
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1540.211 ; gain = 549.723
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1540.211 ; gain = 660.832
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1516.465 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1540.211 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1516.465 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1540.211 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 5 instances were transformed.
   LDC => LDCE: 3 instances
@@ -303,8 +303,8 @@ Synth Design complete | Checksum: dd67c25
 INFO: [Common 17-83] Releasing license: Synthesis
 44 Infos, 46 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:25 . Memory (MB): peak = 1516.465 ; gain = 1038.898
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1516.465 ; gain = 0.000
-INFO: [Common 17-1381] The checkpoint 'C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.runs/synth_1/top_module.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:32 . Memory (MB): peak = 1540.211 ; gain = 1052.598
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1540.211 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.runs/synth_1/top_module.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_module_utilization_synth.rpt -pb top_module_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Nov 30 17:29:59 2023...
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 30 23:34:33 2023...

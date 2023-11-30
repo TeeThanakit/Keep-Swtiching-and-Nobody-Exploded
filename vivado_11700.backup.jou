@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Nov 30 14:50:56 2023
+# Process ID: 11700
+# Current directory: C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11640 C:\Users\CPE\Desktop\CPE222\Keep-Swtiching-and-Nobody-Exploded_Dupls\Keep-Swtiching-and-Nobody-Exploded_Dupls.xpr
+# Log file: C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/vivado.log
+# Journal file: C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls\vivado.jou
+# Running On: DESKTOP-LFUI70J, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 10, Host memory: 16847 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source top_module.tcl
+add_force {/top_module/clock} -radix hex {1 0ns} {0 5000000ps} -repeat_every 10000000ps
+add_force {/top_module/sw} -radix hex {0 0ns}
+add_force {/top_module/btnC} -radix hex {0 0ns}
+add_force {/top_module/btnU} -radix hex {0 0ns}
+add_force {/top_module/btnL} -radix hex {1 0ns} {0 500000000000ps} -repeat_every 1000000000000ps
+add_force {/top_module/btnR} -radix hex {0 0ns}
+add_force {/top_module/btnD} -radix hex {0 0ns}
+add_force {/top_module/btnC} -radix hex {0 0ns}
+run 2 s
+add_force {/top_module/btnC} -radix hex {1 0ns}
+run 2 s
+add_force {/top_module/btnC} -radix hex {0 0ns}
+run 2 s
+add_force {/top_module/btnC} -radix hex {1 0ns}
+run 2 s
+add_force {/top_module/btnC} -radix hex {0 0ns}
+run 2 s
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/CPE/Desktop/CPE222/Keep-Swtiching-and-Nobody-Exploded_Dupls/Keep-Swtiching-and-Nobody-Exploded_Dupls.runs/impl_1/top_module.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_sim
