@@ -3,25 +3,27 @@ module tff_module (
   input clk,     // Clock input
   output reg Q   // Output
 );
-  always @(posedge clk) begin
-    Q <= T ? ~Q : Q;  // Toggle the output based on T input
-  end
+    always @(posedge clk) begin
+        Q <= T ? ~Q : Q;  // Toggle the output based on T input
+    end
 endmodule
 
 module Timer(
+    input win,
+    input restart,
     input btnC,
     input btnU,btnD,
     input clock,
     output reg is_timeout,
     output reg [6:0] seg,
-    output reg [3:0] an
+    output reg [3:0] an,
+    output reg [27:0] state
     );
     // for counting each second
     initial begin
         is_timeout = 1;
     end
     
-    reg [27:0] state;
     reg elapsed;
     
     // count 1 second
@@ -38,8 +40,7 @@ module Timer(
             elapsed = 1;
         else 
             elapsed = 0;
-    
-            
+      
     // switches between 7segment leds
     always @(state)
     begin
@@ -63,107 +64,58 @@ module Timer(
     initial third = 0;
     initial fourth = 0;
     
-    // setting buttons before the game
-    //    wire dbbC,dbbU,dbbD;
-    // wire pressedC,pressedU,pressedD;
-    // tff_module tffC(btnC,clock,pressedC);
-    // tff_module tffU(btnU,clock,pressedU);
-    // tff_module tffD(btnD,clock,pressedD);
-    
-    // is_timeout behavior is 1 when not started, and timeout. 
-    // always @(posedge elapsed)
-    // begin
-    // // Incrementing time
-    //     if (btnU && fourth == 0)
-    //     begin
-    //         if (first == 5)
-    //         begin
-    //             if (second == 9)
-    //             begin
-    //                 third = (third == 9) ? 0 : third + 1;
-    //                 second = 0;
-    //                 first = 0;
-    //             end
-    //             else 
-    //             begin
-    //                 second = second + 1;
-    //                 first = 0;
-    //             end
-    //         end
-    //         else 
-    //             first = first + 5;
-    //     end
-    //     // Decrementing time
-    //     else if (btnD)
-    //     begin
-    //         if (first == 0)
-    //         begin
-    //             if (second == 0 && third != 0)
-    //             begin
-    //                 third = third - 1;
-    //                 second = 9;
-    //                 first = 5;
-    //             end 
-    //             else
-    //             begin
-                
-    //                 second = (second == 0) ? 0 : second - 1;
-    //                 first = 5;
-    //             end
-    //         end
-    //         else
-    //         first = (first == 0) ? 0 : first - 5;   
-    //     end
-    //     // start the countdown
-    //     if(btnC)
-    //     begin
-    //     is_timeout = 0; // start the countdown, set led to 0
-    //         if (first == 0)
-    //         begin
-    //             if (second == 0 && third != 0)
-    //             begin
-    //                 third = third - 1;
-    //                 second = 9;
-    //                 first = 9;
-    //             end
-    //             else if (second !=0)
-    //             begin
-    //                 second = second - 1;
-    //                 first = 9;               
-    //             end
-    //         end
-    //         else
-    //             first = first - 1;
-    //     end
-    //     if ({fourth,third,second,first} == 0)
-    //         is_timeout = 1; // time is out, set led[0] to 1
-    // end
-    
+    // setting up
     always @(posedge clock) 
     begin
-        if (btnU) 
+        if (btnU && is_timeout) // press upper button and it is timeout or haven't started
         begin
             case (second)
-                3: second<=6;
-                6: second<=9;
-                9: second<=3;
+                3: begin // 30 -> 60 seconds
+                    second<=6;
+                    first<=0;
+                end
+                6: begin // 60 -> 90 seconds
+                second<=9;
+                first<=0;
+                end
+                9: begin // 90 -> 30 seconds
+                second<=3;
+                first<=0;
+                end
+                default: begin // if the game ended, and the button is pressed, set the time to 30 seconds
+                second<=3;
+                first<=0;
+                end
             endcase
         end 
-        else if (btnD) 
+        else if (btnD && is_timeout) 
         begin
             case (second)
-                9: second <= 6;
-                6: second <= 3;
-                3: second <= 9;
+                9: begin
+                second<= 6;
+                first<=0;
+                end
+                6: begin
+                second <= 3;
+                first<=0;
+                end
+                3: begin
+                second <= 9;
+                first<=0;
+                end
+                default: begin 
+                second<=3;
+                first<=0;
+                end
             endcase
         end
-        // fail part . the time just ran out immediatly 
+        // center button is pressed, start the game
         else if(btnC || !is_timeout)
         begin
             is_timeout = 0; // start the countdown, set led to 0
             // if(state == 100000000)
             // begin
-                if (first == 0 && state == 100000000)
+                if (first == 0 && state == 100000000 && !win) // let it count per one minute 
                 begin
                     if (second == 0 && third != 0)
                     begin
@@ -177,11 +129,13 @@ module Timer(
                         first = 9;               
                     end
                 end
-                else if(first!=0 && state == 100000000)
+                else if(first!=0 && state == 100000000 && !win)
                     first = first - 1;
-                if ({fourth,third,second,first} == 0)
+                if ({fourth,third,second,first} == 0 || restart == 1) begin
                     is_timeout = 1; // time is out, set led[0] to 1
-            // end
+                    second <=  3;
+                    first <= 0;
+                end
         end
     end
 

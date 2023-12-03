@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.runs/impl_1/top_module.tcl"
+  variable script "C:/Users/USER/Documents/GitHub/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.runs/impl_1/top_module.tcl"
   variable category "vivado_impl"
 }
 
@@ -123,22 +123,23 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 4
-  set_param runs.launchOptions { -jobs 8  }
+  set_param xicom.use_bs_reader 1
+  set_param runs.launchOptions { -jobs 6  }
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tcpg236-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.cache/wt [current_project]
-  set_property parent.project_path C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.xpr [current_project]
-  set_property ip_output_repo C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/USER/Documents/GitHub/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.cache/wt [current_project]
+  set_property parent.project_path C:/Users/USER/Documents/GitHub/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.xpr [current_project]
+  set_property ip_output_repo C:/Users/USER/Documents/GitHub/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.runs/synth_1/top_module.dcp
+  add_files -quiet C:/Users/USER/Documents/GitHub/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.runs/synth_1/top_module.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc C:/Users/witpc/Desktop/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/constrs_1/new/const_ksane.xdc
+  read_xdc C:/Users/USER/Documents/GitHub/Keep-Swtiching-and-Nobody-Exploded/Keep-Swtiching-and-Nobody-Exploded_Dupls.srcs/constrs_1/new/const_ksane.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "read constraints: implementation_pre" START { }
 OPTRACE "read constraints: implementation_pre" END { }

@@ -28,6 +28,9 @@ module top_module(
     wire [1:0] current_mode;
     wire is_timeout;
     wire pressedL, pressedR;
+    wire [27:0] state;
+    wire win;
+    wire restart;
     
     debouncedbutton DBBL (btnL, clock, pressedL);
     debouncedbutton DBBR (btnR, clock, pressedR);
@@ -35,7 +38,7 @@ module top_module(
     debouncedbutton DBBU (btnU,clock,pressedU);
     debouncedbutton DBBD (btnD,clock,pressedD);
   
-    Timer T1(pressedC,pressedU,pressedD,clock,is_timeout,seg,an);
+    Timer T1(win, restart, pressedC,pressedU,pressedD,clock,is_timeout,seg,an,state);
     difficulty_game_mode G1(pressedL, pressedR,clock,sw,current_mode);
-    ledcontroller LC1(clock, current_mode, is_timeout, led);
+    ledcontroller LC1(btnC, clock, current_mode, is_timeout, sw, state, led, win, restart);
 endmodule

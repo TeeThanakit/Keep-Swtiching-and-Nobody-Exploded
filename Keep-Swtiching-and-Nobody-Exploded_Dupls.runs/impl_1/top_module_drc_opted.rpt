@@ -1,8 +1,8 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Thu Nov 30 23:35:01 2023
-| Host         : DESKTOP-UERN9I1 running 64-bit major release  (build 9200)
+| Date         : Mon Dec  4 03:56:38 2023
+| Host         : LAPTOP-KBPR84U8 running 64-bit major release  (build 9200)
 | Command      : report_drc -file top_module_drc_opted.rpt -pb top_module_drc_opted.pb -rpx top_module_drc_opted.rpx
 | Design       : top_module
 | Device       : xc7a35tcpg236-1
@@ -24,12 +24,20 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 0
-+------+----------+-------------+------------+
-| Rule | Severity | Description | Violations |
-+------+----------+-------------+------------+
-+------+----------+-------------+------------+
+             Violations found: 1
++-------------+----------+-------------------------------------------------------------+------------+
+| Rule        | Severity | Description                                                 | Violations |
++-------------+----------+-------------------------------------------------------------+------------+
+| PLHOLDVIO-2 | Warning  | Non-Optimal connections which could lead to hold violations | 1          |
++-------------+----------+-------------------------------------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT DBBR/d1/current_mode[0]_P_i_3 is driving clock pin of 4 cells. This could lead to large hold time violations. Involved cells are:
+G1/current_mode_reg[0]_C, G1/current_mode_reg[0]_P,
+G1/current_mode_reg[1]_C, G1/current_mode_reg[1]_P
+Related violations: <none>
+
 
